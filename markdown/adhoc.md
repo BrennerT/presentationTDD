@@ -1,0 +1,1 @@
+# Klassischer Ad Hoc Ansatz

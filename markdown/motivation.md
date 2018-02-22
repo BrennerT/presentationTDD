@@ -40,3 +40,10 @@ kosten/nutzen bezogen etc
 
 note: 
 Unternehmensicht und Entwicklersicht hier betrachten
+- Wir sehen warum Unternehmen Quality wollen
+- Warum will ich das als Entwickler?
+- Wenn ich einfach nur programiere, entseht schlechter Code.
+- Schreibe etwas bis es funktioniert
+- Funktion macht 20 Sachen
+- Um das zu umgehen brauche ich Disziplin
+- Test helfen, es geht aber auch ohne
