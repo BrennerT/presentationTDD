@@ -45,6 +45,7 @@ Was ist der klassische Ansatz?
 note: 
 Code Example
 Testen ob eine Einheit ihre Funktion erfüllt
+Unit Tests sollen die Ergebnisse anderer Unit Tests nicht beeinflussen
 Was ist eine Unit?
 
 --
@@ -77,22 +78,24 @@ Im TDD werden zu Beginn Blackbox Tests geschrieben
 
 # Frameworks
 
-- Implementieren von automatisierten Tests
-- Programmiersprachen abhängig
+note:
+Implementieren von automatisierten Tests
+Programmiersprachen abhängig
 
 -- 
 
-## Automatisierte Tests
+## Automatisierte Tests 
 
-note: 
-Was sind die Vorteile von automatisierten Tests?
-
+note:
+Ziel: Entscheidung ob ein Fehler im Code entstanden ist auf Knopfdruck 
+schneller Überblick ob durch Codeänderungen Fehler im Programm entstehen
+erleichtern das Testen in Druckphasen eines Projektes
 
 -- 
 
 ## JUnit
 
-- Eigene Testklasse 
+- Jede Klasse erhält eine Testklasse 
 - Annotation @Test zum kennzeichnen eines Tests
 
 note: 
