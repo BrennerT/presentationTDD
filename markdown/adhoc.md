@@ -14,32 +14,29 @@ Was ist der klassische Ansatz?
 
 ## Unit Tests
 
-```php
-    public class Calculator{
-        
-        public static int Add(int x, int y){ 
-            return x + y; 
-        }
-        
-        public static int Divide(int dividend, int divisor){ 
-            return dividend / divisor;
-        }
-
+```java
+public class Calculator{
+    public static int Add(int x, int y){ 
+        return x + y; 
     }
+    public static int Divide(int dividend, int divisor){ 
+        return dividend / divisor;
+    }
+}
 ``` 
 
 -- 
 
 ## Unit Tests
 
-```php
-    public void AddTest(){
-        int x = 1;
-        int y = 2;
-        int expected = 3;
-        int actual = Calculator.Add(x, y);
-        Assert.AreEqual(expected, actual);
-    }
+```java
+public void AddTest(){
+    int x = 1;
+    int y = 2;
+    int expected = 3;
+    int actual = Calculator.Add(x, y);
+    Assert.AreEqual(expected, actual);
+}
 ```
 
 note: 
