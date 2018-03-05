@@ -14,14 +14,17 @@ Was ist der klassische Ansatz?
 
 ## Unit Tests
 
-```java
+```Java
 public class Calculator{
+
     public static int Add(int x, int y){ 
-        return x + y; 
+     return x + y; 
     }
+
     public static int Divide(int dividend, int divisor){ 
-        return dividend / divisor;
+     return dividend / divisor;
     }
+
 }
 ``` 
 
@@ -29,7 +32,7 @@ public class Calculator{
 
 ## Unit Tests
 
-```java
+```Java
 public void AddTest(){
     int x = 1;
     int y = 2;
