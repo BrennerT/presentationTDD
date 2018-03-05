@@ -4,11 +4,11 @@
 
 # Softwarequalität
 
-Wollen wir das überhaupt?
+note: Warum wollen wir Softwarequalität
 
 -- 
 
-## Failcompilation
+## Auswirkungen von Softwarefehlern
 
 ![This image doesnt work](../img/american-airlines-fail.png)
 
@@ -18,19 +18,19 @@ US-Bundesverwaltung: Bericht des obersten Rechnungshofes über neue Projekte (19
 52% funktionierten nie
 18% kamen erst nach aufwändigen Sanierungen zum Einsatz
 3% erfüllen die vereinbarten Vertragsbedingungen
+->Wir brauchen Softwarequalität, nur was ist das?
 
 --  
 
 ## Definition Qualität
 
-![This image doesnt work](../img/definition-qualität.png)
+![This image doesnt work](../img/qualität.png)
 
 note: 
 Qualität ist ein relativer Begriff
-Viele Definitionen von Qualität
-produktbezogen
-nutzerbezogen
-kosten/nutzen bezogen etc
+ISO 9000: Grad, in dem ein Satz inhärenter Merkmale eines Objektes Anforderungen erfüllt
+Qualitätsansätze nach Garvin, tranzendent-, produkt-, kunden-, wert-, fertigungsbezogen 
+-> Wie lässt sich das auf Softwarequalität übertragen
 
 --
 
@@ -39,7 +39,24 @@ kosten/nutzen bezogen etc
 ![Does this image work](../img/grafik-iso9126.png)
 
 note: 
-Unternehmensicht und Entwicklersicht hier betrachten
+Ansatz ISO 9126
+
+-- 
+
+## Qualität aus Unternehmenssicht
+
+![Hier könnte ihre Werbung stehen](../img/qualität-unternehmen.jpg)
+
+note:
+- Qualität kostet Geld
+- Kunden bemerken fehlende Qualität
+- Gute Qualität -> Kunde ist zufrieden -> Kunde kommt zurück (Herman Tietz?)
+
+-- 
+
+## Qualität aus Entwicklersicht
+
+note: 
 - Wir sehen warum Unternehmen Quality wollen
 - Warum will ich das als Entwickler?
 - Wenn ich einfach nur programiere, entseht schlechter Code.
