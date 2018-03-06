@@ -36,7 +36,7 @@ Qualitätsansätze nach Garvin, tranzendent-, produkt-, kunden-, wert-, fertigun
 
 ## Definition Softwarequalität
 
-![Does this image work](../img/grafik-iso9126.png)
+![Does this image work](../img/grafik-iso9126.png) 
 
 note: 
 Ansatz ISO 9126

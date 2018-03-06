@@ -16,7 +16,7 @@ note:
 
 ## TDD Zyklus
 
-![siehe Tafel](../img/TDD Zyklus.png)
+![siehe Tafel](../img/TDD Zyklus.png) <!-- .element: height="350px"-->
 
 note: 
 1) Write a Test -> Was soll meine Komponente machen
@@ -27,11 +27,11 @@ note:
 
 ## 3 Goldene Regeln
 
->1) You can't write any production code until you have first written a failing unit test.
+1) You can't write any production code until you have first written a failing unit test. <!-- .element: class="fragment" height="100px"-->
 
->2) You can't write more of a unit test than is sufficient to fail, and not compiling is failing.
+2) You can't write more of a unit test than is sufficient to fail, and not compiling is failing. <!-- .element: class="fragment" height="100px"-->
 
->3) You can't write more production code than is sufficient to pass the currently failing unit test. 
+3) You can't write more production code than is sufficient to pass the currently failing unit test. <!-- .element: class="fragment" height="100px"-->
 
 note: 
 Hier sollen die Regeln nacheinander angezeigt werden

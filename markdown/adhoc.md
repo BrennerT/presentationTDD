@@ -41,18 +41,18 @@ Im TDD werden zu Beginn Blackbox Tests geschrieben
 
 ## Arten von Tests
 
-- Unit
-- Integration
-- System
-- End-to-End Test
+- Unit <!-- .element: class="fragment" -->
+- Integration <!-- .element: class="fragment" -->
+- System <!-- .element: class="fragment" -->
+- End-to-End Test <!-- .element: class="fragment" -->
 
 --
 
 ## Komponenten Test
 
-- Testen einer Komponente unseres Programms
-- Ziel: fehlerfreie Funktion jeder einzelnen Komponente
-- White-Box Test?
+- Testen einer Komponente unseres Programms <!-- .element: class="fragment" -->
+- Ziel: fehlerfreie Funktion jeder einzelnen Komponente <!-- .element: class="fragment" -->
+- White-Box Test? <!-- .element: class="fragment" -->
 
 note:
 Problem, was ist eine Einheit? Objektorientierung Klassen kleinste Einheit
@@ -61,9 +61,9 @@ Problem, was ist eine Einheit? Objektorientierung Klassen kleinste Einheit
 
 ## Integration Test
 
-- Testen der Kopplung der Komponenten
-- Jede Systemkomponente muss zuvor getestet werden
-- System wird als White-Box betrachtet
+- Testen der Kopplung der Komponenten <!-- .element: class="fragment" -->
+- Jede Systemkomponente muss zuvor getestet werden <!-- .element: class="fragment" -->
+- System wird als White-Box betrachtet <!-- .element: class="fragment" -->
 
 note:
 Testen der Schnittstellen einer Komponente
@@ -75,9 +75,9 @@ System wird als White Box Betrachtet
 
 ## System Test
 
-- Prüfen ob das System als ganzes funktioniert
-- Integrationstest für das vollständige System muss abgeschlossen sein
-- System wird als Black Box betrachtet
+- Prüfen ob das System als ganzes funktioniert <!-- .element: class="fragment" -->
+- Integrationstest für das vollständige System muss abgeschlossen sein <!-- .element: class="fragment" -->
+- System wird als Black Box betrachtet <!-- .element: class="fragment" -->
 
 note:
 Prüfen ob das System als ganzes funktioniert
@@ -90,8 +90,8 @@ System wird als Black Box betrachtet
 
 ## End-to-End Test
 
-- Zeigen dem Kunden, dass das System funktioniert 
-- Betrachten des Systems als Black-Box
+- Zeigen dem Kunden, dass das System funktioniert <!-- .element: class="fragment" -->
+- Betrachten des Systems als Black-Box <!-- .element: class="fragment" -->
 
 note: 
 Auch Abnahme Test? 
@@ -132,8 +132,8 @@ note:
 
 ## JUnit
 
-- Jede Klasse erhält eine Testklasse 
-- Annotation @Test zum kennzeichnen eines Tests
+- Jede Klasse erhält eine Testklasse <!-- .element: class="fragment" -->
+- Annotation @Test zum kennzeichnen eines Tests <!-- .element: class="fragment" -->
 
 note: 
 Java
@@ -155,12 +155,10 @@ public class Calculator{
 
 }
 ``` 
-
--- 
-
-## Beispiel JUnit
+<!-- .element: class="fragment" width="200px"-->
 
 ```Java
+@Test
 public void AddTest(){
     int x = 1;
     int y = 2;
@@ -169,6 +167,7 @@ public void AddTest(){
     Assert.AreEqual(expected, actual);
 }
 ```
+<!-- .element: class="fragment" width="200px"-->
 
 note: 
 Code Example
@@ -183,33 +182,32 @@ Was ist eine Unit?
 Tests schreiben:
 
 describe: suit
+
 it: spec
+
 expect: matcher
 
 note: 
-JavaScript
 
 -- 
 
-## Jasmine Example
+## Beispiel Jasmine
 
 ```JavaScript
-    function helloWorld() {
-     return "Hello world!";
-    }
+   function helloWorld() {
+    return "Hello world!";
+   }
 ```
-
---
-
-## Jasmine Example
+<!-- .element: class="fragment" --> 
 
 ```JavaScript
-    describe("HelloWorld", function(){
-     it("says hello", function(){
-      expect(helloWorld()).toEqual("Hello world!");
-     })
+   describe("HelloWorld", function(){
+    it("says hello", function(){
+     expect(helloWorld()).toEqual("Hello world!");
     })
+   })
 ```
+<!-- .element: class="fragment" --> 
 
 --
 
