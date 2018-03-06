@@ -31,6 +31,9 @@ note:
 
 ![This should be an image with black box and white box comparison](../img/blackbox und whitebox tests.jpg)
 
+***
+[http://m.softwaretestinggenius.com/?page=details&url=white-box-unit-testing-a-bottom-up-approach-of-software-testing](http://m.softwaretestinggenius.com/?page=details&url=white-box-unit-testing-a-bottom-up-approach-of-software-testing)
+
 note: 
 Whitebox: Einblick in das zu testende Programm ist vorhanden, Entwicklersicht
 Blackbox: Kein Einblick in das getestete Programm, Anwendersicht 
@@ -101,7 +104,10 @@ Prüfen ob die UI sich so verhält wie es erwartet wird.
 
 ## Testautomatisierung
 
-![Tests werden heute nicht auf Knopfdruck gezeigt](../img/test-auf-knopfdruck.jpg)
+![Tests werden heute nicht auf Knopfdruck gezeigt](../img/test-auf-knopfdruck.jpg)<!-- .element: height="200px" -->
+
+***
+[https://www.isg-stuttgart.de/fileadmin/_processed_/csm_Fotolia_131459855_L_Testautomatisierung_55885ae42f.jpg](https://www.isg-stuttgart.de/fileadmin/_processed_/csm_Fotolia_131459855_L_Testautomatisierung_55885ae42f.jpg)
 
 note:
 Ausgangssituation: (symbolische Ausführung)Entwickler klickt sich vor commit durch einen Ablauf um zu prüfen ob alles noch funktioniert
@@ -115,10 +121,12 @@ Feedback auf Knopfdruck
 
 ## Anti Pattern Testautomatisierung
 
-![Das Antipattern will sich nicht zeigen](../img/antipattern-automated-tests.png)
+![Das Antipattern will sich nicht zeigen](../img/antipattern-automated-tests.png)<!-- .element: height="380px" -->
 
-note:
-- 
+***
+[https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrgB1E6r9R5Sjj2he_81PxP_MkHG5y_XXSiW9M1jx6DmYNPdjHzw](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrgB1E6r9R5Sjj2he_81PxP_MkHG5y_XXSiW9M1jx6DmYNPdjHzw)
+
+note: 
 
 ---
 
@@ -222,6 +230,9 @@ note:
 ## Mocks
 
 ![No image here](../img/mocking-pattern.png) 
+
+***
+[http://www.dotnetcurry.com/images/mvc/ASP.NET-MVC-Testing-Testing-Model-Separa_64AA/mocking.png](http://www.dotnetcurry.com/images/mvc/ASP.NET-MVC-Testing-Testing-Model-Separa_64AA/mocking.png)
 
 note:
 - bedeutet "vorgetäuscht"
