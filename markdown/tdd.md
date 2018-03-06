@@ -18,6 +18,9 @@ note:
 
 ![siehe Tafel](../img/TDD Zyklus.png) <!-- .element: height="350px"-->
 
+***
+[https://improuv.com/blog/daniel-zappold/tdd-so-einfach-und-doch-so-schwer](https://improuv.com/blog/daniel-zappold/tdd-so-einfach-und-doch-so-schwer)
+
 note: 
 1) Write a Test -> Was soll meine Komponente machen
 2) Make the Test pass -> Implementierung der Komponente
@@ -61,6 +64,9 @@ note:
 
 ![top down](../img/tdd-outside-in.jpg)
 
+***
+[https://image.slidesharecdn.com/tddcommented-130125160145-phpapp01/95/tdd-outsidein-6-638.jpg?cb=1383700832](https://image.slidesharecdn.com/tddcommented-130125160145-phpapp01/95/tdd-outsidein-6-638.jpg?cb=1383700832)
+
 note: 
 System analysieren?
 Was soll mein System machen?
@@ -70,6 +76,9 @@ Was soll mein System machen?
 ## Bottom-Up TDD
 
 ![bottom up](../img/tdd-bottom-up.jpg)
+
+***
+[https://image.slidesharecdn.com/tddcommented-130125160145-phpapp01/95/tdd-outsidein-4-638.jpg?cb=1383700832](https://image.slidesharecdn.com/tddcommented-130125160145-phpapp01/95/tdd-outsidein-4-638.jpg?cb=1383700832)
 
 note:
 Einzelne Komponenten des Systems beschreiben. 
