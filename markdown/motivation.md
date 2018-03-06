@@ -1,5 +1,8 @@
 # Motivation
 
+note: 
+Wir brauchen Softwarequalität!
+
 ---
 
 # Softwarequalität
@@ -12,23 +15,40 @@ note: Warum wollen wir Softwarequalität
 
 ![This image doesnt work](../img/american-airlines-fail.png)
 
+***
+[http://www.zeit.de/gesellschaft/zeitgeschehen/2017-11/american-airlines-computerfehler-piloten-weihnachtstage](http://www.zeit.de/gesellschaft/zeitgeschehen/2017-11/american-airlines-computerfehler-piloten-weihnachtstage)
+
 note:
-US-Bundesverwaltung: Bericht des obersten Rechnungshofes über neue Projekte (1986):
-27% der bezahlten Software wurde nie geliefert
-52% funktionierten nie
-18% kamen erst nach aufwändigen Sanierungen zum Einsatz
-3% erfüllen die vereinbarten Vertragsbedingungen
 ->Wir brauchen Softwarequalität, nur was ist das?
 
 --  
 
 ## Definition Qualität
 
-![This image doesnt work](../img/qualität.png)
+>"Grad, in dem ein Satz inhärenter Merkmale eines Objektes Anforderungen erfüllt"
+
+***
+ISO 9000:2015
 
 note: 
+Inhärenz = Innewohnen
 Qualität ist ein relativer Begriff
-ISO 9000: Grad, in dem ein Satz inhärenter Merkmale eines Objektes Anforderungen erfüllt
+Vergleich von IST und Soll Wert
+
+--
+
+## Qualitätsansätze nach Garvin
+
+- transzendent <!-- .element: class="fragment" -->
+- produktbezogen <!-- .element: class="fragment" -->
+- kundenbezogen <!-- .element: class="fragment" -->
+- wertbezogen <!-- .element: class="fragment" -->
+- fertigungsbezogen <!-- .element: class="fragment" -->
+
+***
+David A. Garvin
+
+note: 
 Qualitätsansätze nach Garvin, tranzendent-, produkt-, kunden-, wert-, fertigungsbezogen 
 -> Wie lässt sich das auf Softwarequalität übertragen
 
@@ -36,16 +56,19 @@ Qualitätsansätze nach Garvin, tranzendent-, produkt-, kunden-, wert-, fertigun
 
 ## Definition Softwarequalität
 
-![Does this image work](../img/grafik-iso9126.png) 
+![Does this image work](../img/grafik-iso9126.png) <!-- .element: height="380px"--> 
 
-note: 
-Ansatz ISO 9126
+***
+[https://de.wikipedia.org/wiki/Softwarequalit%C3%A4t#/media/File:ISO_9126_Grafik.png](https://de.wikipedia.org/wiki/Softwarequalit%C3%A4t#/media/File:ISO_9126_Grafik.png)
 
 -- 
 
 ## Qualität aus Unternehmenssicht
 
 ![Hier könnte ihre Werbung stehen](../img/qualität-unternehmen.jpg)
+
+***
+[http://koch.management/modul%20qualitaet.htm](http://koch.management/modul%20qualitaet.htm)
 
 note:
 - Qualität kostet Geld
