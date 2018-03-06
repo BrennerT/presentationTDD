@@ -176,10 +176,9 @@ Testen ob eine Einheit ihre Funktion erfüllt
 Unit Tests sollen die Ergebnisse anderer Unit Tests nicht beeinflussen
 Was ist eine Unit?
 
-
 -- 
 
-## Jasmin
+## Jasmine
 
 Tests schreiben:
 
@@ -192,6 +191,28 @@ JavaScript
 
 -- 
 
+## Jasmine Example
+
+```JavaScript
+    function helloWorld() {
+     return "Hello world!";
+    }
+```
+
+--
+
+## Jasmine Example
+
+```JavaScript
+    describe("HelloWorld", function(){
+     it("says hello", function(){
+      expect(helloWorld()).toEqual("Hello world!");
+     })
+    })
+```
+
+--
+
 ## Property Based Testing
 
 ---
@@ -202,16 +223,28 @@ JavaScript
 
 ## Mocks
 
-Wozu braucht man die?
+![No image here](../img/mocking-pattern.png) 
+
+note:
+- bedeutet "vorgetäuscht"
+- primär in unit tests
+- simulieren des verhaltens von realen Objekten, die sich schlecht im Unit Test einbinden lassen
+- z. Bsp. Dateien, Daten, Uhrzeit
 
 ---
 
 # Ergebnisse & Probleme
 
-- Fehler werden übersehen
-- Warum Testen, das funktioniert
-- Macht der Tests wirklich etwas?
-- Code untestbar geschrieben
-- Wer muss Tests schreiben? -> Tests sucken
-- Externes Team ist schlecht
-- Geringe Testabdeckung ist schlechter als gar keine Tests
+
+
+note: 
+- T: Fehler werden übersehen
+- D: Warum Testen, das funktioniert
+- D: Macht der Tests wirklich etwas?
+- D: Code untestbar geschrieben
+- D: Wer muss Tests schreiben? -> Tests sucken
+- T: Externes Team ist schlecht
+    Personalaufwand
+    Testteam nervt -> Entwickler haben weniger Spaß
+- T: Geringe Testabdeckung ist schlechter als gar keine Tests
+    geben das gefühl man hätte etwas getestet, dass ist aber nicht wirklich so
