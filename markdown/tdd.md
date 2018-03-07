@@ -22,7 +22,7 @@ note:
 [https://improuv.com/blog/daniel-zappold/tdd-so-einfach-und-doch-so-schwer](https://improuv.com/blog/daniel-zappold/tdd-so-einfach-und-doch-so-schwer)
 
 note: 
-1) Write a Test -> Was soll meine Komponente machen
+1) Write a Test -> Was soll meine Komponente machen -> Unterschied zum klassischen Unit Test
 2) Make the Test pass -> Implementierung der Komponente
 3) Refactor
 
@@ -110,3 +110,4 @@ note:
 - Anforderungen werden verstanden
 - Anfang ist schwer, Neue Frameworks extrem schwer
 - BDD
+- Unit Tests helfen bei der Dokumentation, indem sie beabsichtigte Verwendungen und Reaktionen aufzeigen
