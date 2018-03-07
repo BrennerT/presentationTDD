@@ -1,7 +1,8 @@
 # Klassischer Ansatz
 
 note: 
-Wie wird aktuell getestet?
+- Eigene Teams für Testing
+- Oft Outsourcing
 
 ---
 
@@ -32,7 +33,7 @@ note:
 ![This should be an image with black box and white box comparison](../img/blackbox und whitebox tests.jpg)
 
 ***
-[http://m.softwaretestinggenius.com/?page=details&url=white-box-unit-testing-a-bottom-up-approach-of-software-testing](http://m.softwaretestinggenius.com/?page=details&url=white-box-unit-testing-a-bottom-up-approach-of-software-testing)
+[http://m.softwaretestinggenius.com/?page=details&url=white-box-unit-testing-a-bottom-up-approach-of-software-testing](http://m.softwaretestinggenius.com/?page=details&url=white-box-unit-testing-a-bottom-up-approach-of-software-testing)<!-- .element: style="font-size: 25px" -->
 
 note: 
 Whitebox: Einblick in das zu testende Programm ist vorhanden, Entwicklersicht
@@ -44,89 +45,90 @@ Im TDD werden zu Beginn Blackbox Tests geschrieben
 
 ## Arten von Tests
 
-- Unit <!-- .element: class="fragment" -->
-- Integration <!-- .element: class="fragment" -->
-- System <!-- .element: class="fragment" -->
-- End-to-End Test <!-- .element: class="fragment" -->
+--
+
+## Unit Test
+
+- Testen einer Komponente der Software <!-- .element: class="fragment" -->
+- Ziel: fehlerfreie Funktion jeder einzelnen Komponente <!-- .element: class="fragment" -->
+- Black-Box Test <!-- .element: class="fragment" -->
+
+note:
 
 --
 
-## Komponenten Test
+## Was zeichnet gute Unit Tests aus
 
-- Testen einer Komponente unseres Programms <!-- .element: class="fragment" -->
-- Ziel: fehlerfreie Funktion jeder einzelnen Komponente <!-- .element: class="fragment" -->
-- White-Box Test? <!-- .element: class="fragment" -->
+- sind isoliert <!-- .element: class="fragment" -->
+- sichern jeweils genau eine Eigenschaft ab <!-- .element: class="fragment" -->
+- sind leicht verständlich und kurz <!-- .element: class="fragment" -->
+- testen relevanten Code <!-- .element: class="fragment" -->
+- weisen genauso hohe Code Qualität auf, wie der Produktiv Code selbst <!-- .element: class="fragment" -->
 
-note:
-Problem, was ist eine Einheit? Objektorientierung Klassen kleinste Einheit
-
+note: 
+- Tests sollen in beliebiger Reihenfolge ausführbar sein
+- Falsches Verhalten soll sich nur an einer Stelle zeigen
+- leicht verständlich, unterstützt Dokumentation
+- keine Getter und Setter testen
 --
 
 ## Integration Test
 
 - Testen der Kopplung der Komponenten <!-- .element: class="fragment" -->
-- Jede Systemkomponente muss zuvor getestet werden <!-- .element: class="fragment" -->
 - System wird als White-Box betrachtet <!-- .element: class="fragment" -->
+- Jede Systemkomponente muss zuvor getestet werden <!-- .element: class="fragment" -->
+- Ziel: Fehlerfreies zusammenwirken der Systemkomponenten <!-- .element: class="fragment" -->
 
 note:
-Testen der Schnittstellen einer Komponente
-Ziel: Fehlerfreies Zusammenwirken der Systemkomponenten
-Vorrausetzung: Jede Systemkomponente muss zuvor getestet werden, Unit Test
-System wird als White Box Betrachtet
+- Integrationstests prüfen ob Komponenten richtig zusammenarbeiten
+- Prüfen ob die Logik funktioniert wie geplant
 
 --
-
-## System Test
-
-- Prüfen ob das System als ganzes funktioniert <!-- .element: class="fragment" -->
-- Integrationstest für das vollständige System muss abgeschlossen sein <!-- .element: class="fragment" -->
-- System wird als Black Box betrachtet <!-- .element: class="fragment" -->
-
-note:
-Prüfen ob das System als ganzes funktioniert
-Vorraussetzung: 
-Pflichtenheft
-Integrationstest für das vollständige System ist abgeschlossen
-System wird als Black Box betrachtet    
-
---
-
 ## End-to-End Test
 
-- Zeigen dem Kunden, dass das System funktioniert <!-- .element: class="fragment" -->
-- Betrachten des Systems als Black-Box <!-- .element: class="fragment" -->
+- Prüfen wie sich die Software unter real Bedingungen verhält <!-- .element: class="fragment" -->
+- Häufig Performance Tests <!-- .element: class="fragment" -->
+- Testen aus der Nutzer Perspektive <!-- .element: class="fragment" -->
 
 note: 
-Auch Abnahme Test? 
-Prüfen ob die UI sich so verhält wie es erwartet wird.
+- Prüfen ob die UI sich so verhält wie es erwartet wird.
+- Kann auch für Kundenvorführung verwendet werden
 
 --
 
 ## Testautomatisierung
 
-![Tests werden heute nicht auf Knopfdruck gezeigt](../img/test-auf-knopfdruck.jpg)<!-- .element: height="200px" -->
+![Tests werden heute nicht auf Knopfdruck gezeigt](../img/test-auf-knopfdruck.jpg)<!-- .element: height="300px" -->
 
 ***
-[https://www.isg-stuttgart.de/fileadmin/_processed_/csm_Fotolia_131459855_L_Testautomatisierung_55885ae42f.jpg](https://www.isg-stuttgart.de/fileadmin/_processed_/csm_Fotolia_131459855_L_Testautomatisierung_55885ae42f.jpg)
+[https://www.isg-stuttgart.de/fileadmin/_processed_/csm_Fotolia_131459855_L_Testautomatisierung_55885ae42f.jpg](https://www.isg-stuttgart.de/fileadmin/_processed_/csm_Fotolia_131459855_L_Testautomatisierung_55885ae42f.jpg)<!-- .element: style="font-size: 25px" -->
 
 note:
-Ausgangssituation: (symbolische Ausführung)Entwickler klickt sich vor commit durch einen Ablauf um zu prüfen ob alles noch funktioniert
-Problem: Sehr Fehler anfällig -> nicht alle Fehler werden erkannt
-Lösung: Tests werden automatisiert -> Ergebnisse auf Knopfdruck
-Vorteile: 
+- Ausgangssituation: (symbolische Ausführung) Entwickler klickt sich vor commit durch einen Ablauf um zu prüfen ob alles noch funktioniert
+- Problem: Sehr Fehler anfällig -> nicht alle Fehler werden erkannt
+- Lösung: Tests werden automatisiert -> Ergebnisse auf Knopfdruck
+- Vorteile: 
 erleichtert das Testen in Druckphasen eines Projektes
 Feedback auf Knopfdruck
 
 --
 
-## Anti Pattern Testautomatisierung
+## Automatisierungs Pyramide
 
-![Das Antipattern will sich nicht zeigen](../img/antipattern-automated-tests.png)<!-- .element: height="380px" -->
+![Das Antipattern will sich nicht zeigen](../img/antipattern-automated-tests.png)<!-- .element: height="350px" -->
 
 ***
-[https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrgB1E6r9R5Sjj2he_81PxP_MkHG5y_XXSiW9M1jx6DmYNPdjHzw](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrgB1E6r9R5Sjj2he_81PxP_MkHG5y_XXSiW9M1jx6DmYNPdjHzw)
+[https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrgB1E6r9R5Sjj2he_81PxP_MkHG5y_XXSiW9M1jx6DmYNPdjHzw](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrgB1E6r9R5Sjj2he_81PxP_MkHG5y_XXSiW9M1jx6DmYNPdjHzw)<!-- .element: style="font-size: 25px"-->
 
-note: 
+note:
+- Unit Tests sind die billigsten Tests
+- Mid Layer, immer hier automatisieren anstatt in der UI
+- UI Layer, am wenigstens tests, da diese die aufwändigsten Tests sind
+
+
+---
+
+# Praktische Erfahrungen
 
 ---
 
@@ -138,26 +140,16 @@ note:
 
 -- 
 
-## JUnit
-
-- Jede Klasse erhält eine Testklasse <!-- .element: class="fragment" -->
-- Annotation @Test zum kennzeichnen eines Tests <!-- .element: class="fragment" -->
-
-note: 
-Java
-
--- 
-
 ## Beispiel JUnit
 
 ```Java
 public class Calculator{
 
-    public static int Add(int x, int y){ 
+    public static int add(int x, int y){ 
      return x + y; 
     }
 
-    public static int Divide(int dividend, int divisor){ 
+    public static int divide(int dividend, int divisor){ 
      return dividend / divisor;
     }
 
@@ -167,35 +159,18 @@ public class Calculator{
 
 ```Java
 @Test
-public void AddTest(){
-    int x = 1;
-    int y = 2;
-    int expected = 3;
-    int actual = Calculator.Add(x, y);
-    Assert.AreEqual(expected, actual);
+public void addTest(){
+    int actual = Calculator.add(1, 2);
+    Assert.AreEqual(3, actual);
 }
 ```
 <!-- .element: class="fragment" width="200px"-->
 
-note: 
-Code Example
-Testen ob eine Einheit ihre Funktion erfüllt
-Unit Tests sollen die Ergebnisse anderer Unit Tests nicht beeinflussen
-Was ist eine Unit?
-
--- 
-
-## Jasmine
-
-Tests schreiben:
-
-describe: suit
-
-it: spec
-
-expect: matcher
-
-note: 
+note:
+- Unit Tests in Java
+- makieren eines Tests mit Annotation 
+- Was ist eine Unit?
+- Bereits für TDD verwendet
 
 -- 
 
@@ -209,13 +184,17 @@ note:
 <!-- .element: class="fragment" --> 
 
 ```JavaScript
-   describe("HelloWorld", function(){
-    it("says hello", function(){
+   describe("HelloWorld", () => {
+    it("says hello", () => {
      expect(helloWorld()).toEqual("Hello world!");
     })
    })
 ```
 <!-- .element: class="fragment" --> 
+
+note: 
+- noch nicht verwendet
+- keywords describe, it, expect
 
 --
 
@@ -232,22 +211,21 @@ note:
 ![No image here](../img/mocking-pattern.png) 
 
 ***
-[http://www.dotnetcurry.com/images/mvc/ASP.NET-MVC-Testing-Testing-Model-Separa_64AA/mocking.png](http://www.dotnetcurry.com/images/mvc/ASP.NET-MVC-Testing-Testing-Model-Separa_64AA/mocking.png)
+[http://www.dotnetcurry.com/images/mvc/ASP.NET-MVC-Testing-Testing-Model-Separa_64AA/mocking.png](http://www.dotnetcurry.com/images/mvc/ASP.NET-MVC-Testing-Testing-Model-Separa_64AA/mocking.png)<!-- .element: style="font-size:25px" -->
 
 note:
 - bedeutet "vorgetäuscht"
-- primär in unit tests
 - simulieren des verhaltens von realen Objekten, die sich schlecht im Unit Test einbinden lassen
 - z. Bsp. Dateien, Daten, Uhrzeit
+- Unit Tests sollen in beliebiger Reihenfolge ausgeführt werden können
 
 ---
 
 # Ergebnisse & Probleme
 
-
-
 note: 
 - T: Fehler werden übersehen
+    
 - D: Warum Testen, das funktioniert
 - D: Macht der Tests wirklich etwas?
 - D: Code untestbar geschrieben
