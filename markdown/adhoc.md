@@ -255,6 +255,26 @@ note:
 
 --
 
+## Mock Example
+
+```kotlin
+   interface TodoDataAccessor {
+    fun writeTodos(todo: List<Todo>)
+   }
+
+   class TodoLogic {
+    @Inject var dataAccessor: TodoDataAccessor
+    fun writeNewestTodos(todos: List<Todo>) {
+     dataAccessor.writeTodos(todos.filter { it.data > now().minusDays(1)})
+    }
+   } 
+```
+```kotlin
+    
+```
+
+--
+
 ## Pattern im Code
 
 *Beispiele**
