@@ -230,6 +230,18 @@ note:
 
 ## Property Based Testing
 
+```Haskell
+    describe "reverse" $
+      it "returns the original list if applied twice" $
+        \list -> reverse (reverse list) `shouldBe` list
+```
+
+note:
+- Problem mit Standard-Tests: Welche Fälle werden behandelt, welche werden vergessen
+- Zufallsdaten helfen, aber sind auch nicht perfekt
+- Wäre es nicht super, wenn man **Eigenschaften** überprüfen kann?
+- Property based testing hilft
+
 ---
 
 # Pattern
