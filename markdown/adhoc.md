@@ -20,50 +20,6 @@ note:
 
 -- 
 
-## Black Box Tests
-
-![black box](../img/blackbox.PNG)
-
-*Beispiel mit Code*
-
-***
-[White Box Testing and Black Box Testing in Software Testing](https://www.testing-whiz.com/blog/understanding-white-box-testing-and)<!-- .element: style="font-size: 25px" -->
-
-
-note:
-- Wie immer im Software Engeneering gibt es Black & White Boxes
-- Im Grunde hat der Tester (wer auch immer das ist) keine Ahnung, wie das System implementiert ist
-- Es werden nur die Spezifikationen genommen und daraus Testcases erstellt und in das Programm reingeworfen
-- Dann macht das Programm etwas (was genau ist dem Tester egal)
-- Und am Ende kommt ein richtiges oder falsches Ergebniss
-- Das ganze kann manuell explorativ sein, oder automatisiert
-- Es gibt auch negativ Cases
-- Man kann Grenzwertanalyse machen (Beispiel?)
-- Man kann Equivalenzklassen nutzen 
-- Man kann Fehler raten
-- Also alles in allem ziemlich Funktional
-
--- 
-
-
-## White Box Tests
-
-![white box](../img/whitebox.PNG)
-
-*Beispiel mit Code*
-
-***
-[White Box Testing and Black Box Testing in Software Testing](https://www.testing-whiz.com/blog/understanding-white-box-testing-and)<!-- .element: style="font-size: 25px" -->
-
-note:
-- Offensichtlich das Gegenteil
-- Tester kennt das System und entwickelt anhand der genauen implementierung Testcases
-- Dazu muss er das System analysieren und verstehen und schreibt Cases um jede Zeile zu testen
-- Tester schaut, welche Stellen fehleranfällig sein können
-- Controllflow tests usw.
-
--- 
-
 
 ## Arten von Tests
 
@@ -115,8 +71,16 @@ note:
 - leicht verständlich, unterstützt Dokumentation
 - Isolation kann Parallelisierung vereinfachen
 - Getter und Setter teste ja/nein?
+
 --
 
+## Was ist eine Unit?
+
+*"smallest piece of software"* <!-- .element: class="fragment" -->
+
+*"unit of work"*<!-- .element: class="fragment" -->
+
+--
 ## Integration Test
 
 ![integration test failing](../img/integration-test.jpg)<!-- .element: height="350px" -->
@@ -144,6 +108,50 @@ note:
 - am besten ausführen für alle Use Cases die einem einfallen
 - stellt sicher das Programm bereit ist ausgeliefert zu werden
 - Integration -> Zwei Boxen, E2E -> Alle Boxen
+
+-- 
+
+## Black Box Tests
+
+![black box](../img/blackbox.PNG)
+
+*Beispiel mit Code*
+
+***
+[White Box Testing and Black Box Testing in Software Testing](https://www.testing-whiz.com/blog/understanding-white-box-testing-and)<!-- .element: style="font-size: 25px" -->
+
+
+note:
+- Wie immer im Software Engeneering gibt es Black & White Boxes
+- Im Grunde hat der Tester (wer auch immer das ist) keine Ahnung, wie das System implementiert ist
+- Es werden nur die Spezifikationen genommen und daraus Testcases erstellt und in das Programm reingeworfen
+- Dann macht das Programm etwas (was genau ist dem Tester egal)
+- Und am Ende kommt ein richtiges oder falsches Ergebniss
+- Das ganze kann manuell explorativ sein, oder automatisiert
+- Es gibt auch negativ Cases
+- Man kann Grenzwertanalyse machen (Beispiel?)
+- Man kann Equivalenzklassen nutzen 
+- Man kann Fehler raten
+- Also alles in allem ziemlich Funktional
+
+-- 
+
+
+## White Box Tests
+
+![white box](../img/whitebox.PNG)
+
+*Beispiel mit Code*
+
+***
+[White Box Testing and Black Box Testing in Software Testing](https://www.testing-whiz.com/blog/understanding-white-box-testing-and)<!-- .element: style="font-size: 25px" -->
+
+note:
+- Offensichtlich das Gegenteil
+- Tester kennt das System und entwickelt anhand der genauen implementierung Testcases
+- Dazu muss er das System analysieren und verstehen und schreibt Cases um jede Zeile zu testen
+- Tester schaut, welche Stellen fehleranfällig sein können
+- Controllflow tests usw.
 
 --
 
@@ -189,10 +197,11 @@ note:
 
 ## Given-When-Then
 
->**Scenario**: </br>
-**Given** certain preconditions </br>
-**When** i do something </br>
-**Then** the following outcome should be observed
+**Scenario**:
+
+- **Given** certain preconditions </br>
+- **When** i do something </br>
+- **Then** the following outcome should be observed
 
 note: 
 - Beschreiben eines Szenarios mit bestimmten Schlüsselwörtern
