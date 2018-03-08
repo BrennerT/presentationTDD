@@ -271,6 +271,16 @@ note:
 
 # Ergebnisse & Probleme
 
+note:
+- Das Test sinnvoll sind, haben bestimmt alle verstanden
+- Mit den hier gezeigten Pattern, kann man auch ganz gut implementieren und testen
+- Aber es gibt auch Probleme:
+    1) *Kurs fragen* Wer testet? Wer mag testen?
+       Generell macht testen einfach keinen Spaß... ich will entwickeln
+       Da fehlt Befriedigung etwas zu erreichen
+    2) Was ist die Motivation zu testen? Was ich schreibe funktioniert doch, dass **weiß** ich!
+    3) Funktion sieht schwer testbar aus... aber die funktioniert bestimmt, also teste ich nicht
+
 --
 
 ## Was macht der Test?
