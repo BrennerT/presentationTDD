@@ -261,9 +261,55 @@ note:
 - z. Bsp. Dateien, Daten, Uhrzeit
 - Unit Tests sollen in beliebiger Reihenfolge ausgeführt werden können
 
+--
+
+## Pattern im Code
+
+*Beispiele**
+
 ---
 
 # Ergebnisse & Probleme
+
+--
+
+## Was macht der Test?
+
+``` kotlin
+    @Test
+    fun `deleteAll deletes all fields from db`() {
+        // Given: some fields in the db
+        val fieldsInDb = createRandomFields()
+        fieldsAccessor.insert(fieldsInDb)
+        
+        // When: we delete all fields
+        fieldsAccessor.deleteAll()
+        
+        // Then: there are non left
+        val fieldsLeft = fieldsAccessor.getAll()
+        fieldsLeft should beEmpty
+    }
+```
+<!-- .element: class="fragment" -->
+
+
+``` kotlin
+    fun getAll() {
+        // hm... these are not fields
+        return database.allProcesses()
+    }
+```
+<!-- .element: class="fragment" -->
+
+note:
+- Es kann auch Tests geben, die eigentlich gar nichts bringen
+- Hier ein Beispiel von meiner Arbeit
+- *Test erklären*
+- Der Test sieht eigentlich gut aus... aber die zu testene Funktion konnte man auskommentieren
+- In der Implementierung sieht man, dass der Test in Wahrheit überhaupt nichts testet
+- Das ist ein Fall, den man unbedingt vermeiden muss
+
+--
 
 note: 
 - T: Fehler werden übersehen
