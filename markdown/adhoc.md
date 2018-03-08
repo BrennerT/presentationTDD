@@ -176,18 +176,49 @@ note:
 - Mid Layer, immer hier automatisieren anstatt in der UI
 - UI Layer, am wenigstens tests, da diese die aufwändigsten Tests sind
 
-
 ---
 
-# Praktische Erfahrungen
-
----
-
-# Frameworks
+# Styles 
 
 note:
-- Helfen bei der Programmierung von Tests
-- Beschreiben was eine Komponente macht, nicht wie sie es macht
+- wie werden Tests geschrieben
+
+--
+
+## Given-When-Then
+
+>**Scenario**: </br>
+**Given** certain preconditions </br>
+**When** i do something </br>
+**Then** the following outcome should be observed
+
+note: 
+- Beschreiben eines Szenarios mit bestimmten Schlüsselwörtern
+- given beschreibt die Bedinungen vorher
+- when beschreibt das verhalten der Anwendung
+- then beschreibt Änderungen die danach beobachtet werden können
+
+--
+
+## Given-When-Then
+
+```Java
+@Test
+public void testIsPalindrome(){
+    // Given
+    String s = "tacocat";
+    // When
+    Boolean result = p.isPalindrome(s);
+    // Then
+    assertThat(result, is(true));
+}
+```
+
+note:
+- Einfaches Beispiel wie der Ansatz gedanklich in JUnit umgesetzt werden kann
+- JBehave wäre aber eine Implementierung dieses Ansatzes für Behaviour Driven Development
+
+--
 
 ## Property Based Testing
 
