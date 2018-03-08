@@ -250,40 +250,42 @@ note:
 
 # Pattern
 
--- 
-
-## Mocks
-
-![No image here](../img/mocking-pattern.png) 
-
-***
-[http://www.dotnetcurry.com/images/mvc/ASP.NET-MVC-Testing-Testing-Model-Separa_64AA/mocking.png](http://www.dotnetcurry.com/images/mvc/ASP.NET-MVC-Testing-Testing-Model-Separa_64AA/mocking.png)<!-- .element: style="font-size:25px" -->
-
-note:
-- bedeutet "vorgetäuscht"
-- simulieren des verhaltens von realen Objekten, die sich schlecht im Unit Test einbinden lassen
-- z. Bsp. Dateien, Daten, Uhrzeit
-- Unit Tests sollen in beliebiger Reihenfolge ausgeführt werden können
-
 --
 
-## Mock Example
+## Ausgangssituation
 
-```kotlin
-   interface TodoDataAccessor {
-    fun writeTodos(todo: List<Todo>)
-   }
+- Objekt liefert nicht-deterministische Ergebnisse <!-- .element: class="fragment"-->
+- Objekt besitzt Zustände die sich nicht erzeugen oder reproduzieren lassen <!-- .element: class="fragment"-->
+- Objekt ist langsam <!-- .element: class="fragment"-->
+- Objekt ist bisher noch nicht implementiert <!-- .element: class="fragment"-->
+- Objekt müsste nur für die Tests Funktionen implementieren <!-- .element: class="fragment"-->
 
-   class TodoLogic {
-    @Inject var dataAccessor: TodoDataAccessor
-    fun writeNewestTodos(todos: List<Todo>) {
-     dataAccessor.writeTodos(todos.filter { it.data > now().minusDays(1)})
-    }
-   } 
-```
-```kotlin
-    
-```
+note:
+- nicht deterministisch bedeutet bei jeder Ausführung anders (Datum)
+- Zustände, Netzwerkfehler
+- langsam z.Bsp. Datenbank
+- Häufig im Top Down der Fall 
+- Wie lösen wir das?
+
+-- 
+
+## Stubs / Mocks / Fakes
+
+>**Stub**: stellt vorgefertigte Antworten zur Verfügung</br>
+**Mock**: simuliert das Verhalten eines realen Objektes in einem vorgegebenen Weg</br>
+**Fake**: Besitzt eine funktionierende Implementation
+
+***
+Martin Fowler
+[https://www.martinfowler.com/articles/mocksArentStubs.html](https://www.martinfowler.com/articles/mocksArentStubs.html)<!-- .element: style="font-size: 25px" --> 
+
+note:
+- Simulieren das Verhalten von realen Objekten
+- Interface ist identisch mit dem des simulierten Objekts
+Beispiel:
+- a fake cook - a someone pretending to be a cook by using frozen dinners and a microwave,
+- a stub cook - a hot dog vendor that always gives you hot dogs no matter what you order, or
+- a mock cook - an undercover cop following a script pretending to be a cook in a sting operation.
 
 --
 
