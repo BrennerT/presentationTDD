@@ -49,12 +49,34 @@ Im TDD werden zu Beginn Blackbox Tests geschrieben
 
 ## Unit Test
 
-- Testen einer Komponente der Software <!-- .element: class="fragment" -->
-- Ziel: fehlerfreie Funktion jeder einzelnen Komponente <!-- .element: class="fragment" -->
-- Black-Box Test <!-- .element: class="fragment" -->
+```Java
+public class Calculator{
+
+    public static int add(int x, int y){ 
+     return x + y; 
+    }
+
+    public static int divide(int dividend, int divisor){ 
+     return dividend / divisor;
+    }
+
+}
+``` 
+<!-- .element: class="fragment" width="200px"-->
+
+```Java
+@Test
+public void addTest(){
+    int actual = Calculator.add(1, 2);
+    Assert.AreEqual(3, actual);
+}
+```
+<!-- .element: class="fragment" width="200px"-->
 
 note:
-
+- Testen einer Komponente der Software
+- Ziel: fehlerfreie Funktion jeder einzelnen Komponente
+- Black-Box Test
 --
 
 ## Was zeichnet gute Unit Tests aus
@@ -74,24 +96,28 @@ note:
 
 ## Integration Test
 
-- Testen der Kopplung der Komponenten <!-- .element: class="fragment" -->
-- System wird als White-Box betrachtet <!-- .element: class="fragment" -->
-- Jede Systemkomponente muss zuvor getestet werden <!-- .element: class="fragment" -->
-- Ziel: Fehlerfreies zusammenwirken der Systemkomponenten <!-- .element: class="fragment" -->
+![integration test failing](../img/integration-test.jpg)<!-- .element: height="350px" -->
+
+***
+[https://chriskottom.com/images/unit-tests-passing-no-integration-tests.jpg](https://chriskottom.com/images/unit-tests-passing-no-integration-tests.jpg)<!-- .element: style="font-size: 25px"-->
 
 note:
 - Integrationstests prüfen ob Komponenten richtig zusammenarbeiten
 - Prüfen ob die Logik funktioniert wie geplant
+- Testen der Kopplung der Komponenten
+- System wird als White-Box betrachtet
+- Jede Systemkomponente muss zuvor getestet werden
+- Ziel: Fehlerfreies zusammenwirken der Systemkomponenten
 
 --
 ## End-to-End Test
 
-- Prüfen wie sich die Software unter real Bedingungen verhält <!-- .element: class="fragment" -->
-- Häufig Performance Tests <!-- .element: class="fragment" -->
-- Testen aus der Nutzer Perspektive <!-- .element: class="fragment" -->
+![end to end example](../img/end-to-end-example.png)
 
 note: 
-- Prüfen ob die UI sich so verhält wie es erwartet wird.
+- Prüfen wie sich die Software unter real Bedingungen verhält
+- Häufig Performance Tests
+- Testen aus der Nutzer Perspektive
 - Kann auch für Kundenvorführung verwendet werden
 
 --
@@ -138,66 +164,6 @@ note:
 - Helfen bei der Programmierung von Tests
 - Beschreiben was eine Komponente macht, nicht wie sie es macht
 
--- 
-
-## Beispiel JUnit
-
-```Java
-public class Calculator{
-
-    public static int add(int x, int y){ 
-     return x + y; 
-    }
-
-    public static int divide(int dividend, int divisor){ 
-     return dividend / divisor;
-    }
-
-}
-``` 
-<!-- .element: class="fragment" width="200px"-->
-
-```Java
-@Test
-public void addTest(){
-    int actual = Calculator.add(1, 2);
-    Assert.AreEqual(3, actual);
-}
-```
-<!-- .element: class="fragment" width="200px"-->
-
-note:
-- Unit Tests in Java
-- makieren eines Tests mit Annotation 
-- Was ist eine Unit?
-- Bereits für TDD verwendet
-
--- 
-
-## Beispiel Jasmine
-
-```JavaScript
-   function helloWorld() {
-    return "Hello world!";
-   }
-```
-<!-- .element: class="fragment" --> 
-
-```JavaScript
-   describe("HelloWorld", () => {
-    it("says hello", () => {
-     expect(helloWorld()).toEqual("Hello world!");
-    })
-   })
-```
-<!-- .element: class="fragment" --> 
-
-note: 
-- noch nicht verwendet
-- keywords describe, it, expect
-
---
-
 ## Property Based Testing
 
 ---
@@ -231,7 +197,9 @@ note:
 - D: Code untestbar geschrieben
 - D: Wer muss Tests schreiben? -> Tests sucken
 - T: Externes Team ist schlecht
+    externe Teams sind billiger
     Personalaufwand
     Testteam nervt -> Entwickler haben weniger Spaß
 - T: Geringe Testabdeckung ist schlechter als gar keine Tests
     geben das gefühl man hätte etwas getestet, dass ist aber nicht wirklich so
+    viele Tests bleiben unentdeckt
