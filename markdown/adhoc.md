@@ -28,20 +28,50 @@ note:
 
 -- 
 
-## Black Box vs. White Box
+## Black Box Tests
 
-![This should be an image with black box and white box comparison](../img/blackbox und whitebox tests.jpg)
+![black box](../img/blackbox.PNG)
+
+*Beispiel mit Code*
 
 ***
-[http://m.softwaretestinggenius.com/?page=details&url=white-box-unit-testing-a-bottom-up-approach-of-software-testing](http://m.softwaretestinggenius.com/?page=details&url=white-box-unit-testing-a-bottom-up-approach-of-software-testing)<!-- .element: style="font-size: 25px" -->
+[White Box Testing and Black Box Testing in Software Testing](https://www.testing-whiz.com/blog/understanding-white-box-testing-and)<!-- .element: style="font-size: 25px" -->
 
-note: 
-Whitebox: Einblick in das zu testende Programm ist vorhanden, Entwicklersicht
-Blackbox: Kein Einblick in das getestete Programm, Anwendersicht 
-Sollten Tests nach Black- oder White-Box Prinzip verarbeitet werden?
-Im TDD werden zu Beginn Blackbox Tests geschrieben
+
+note:
+- Wie immer im Software Engeneering gibt es Black & White Boxes
+- Im Grunde hat der Tester (wer auch immer das ist) keine Ahnung, wie das System implementiert ist
+- Es werden nur die Spezifikationen genommen und daraus Testcases erstellt und in das Programm reingeworfen
+- Dann macht das Programm etwas (was genau ist dem Tester egal)
+- Und am Ende kommt ein richtiges oder falsches Ergebniss
+- Das ganze kann manuell explorativ sein, oder automatisiert
+- Es gibt auch negativ Cases
+- Man kann Grenzwertanalyse machen (Beispiel?)
+- Man kann Equivalenzklassen nutzen 
+- Man kann Fehler raten
+- Also alles in allem ziemlich Funktional
 
 -- 
+
+
+## White Box Tests
+
+![white box](../img/whitebox.PNG)
+
+*Beispiel mit Code*
+
+***
+[White Box Testing and Black Box Testing in Software Testing](https://www.testing-whiz.com/blog/understanding-white-box-testing-and)<!-- .element: style="font-size: 25px" -->
+
+note:
+- Offensichtlich das Gegenteil
+- Tester kennt das System und entwickelt anhand der genauen implementierung Testcases
+- Dazu muss er das System analysieren und verstehen und schreibt Cases um jede Zeile zu testen
+- Tester schaut, welche Stellen fehleranfällig sein können
+- Controllflow tests usw.
+
+-- 
+
 
 ## Arten von Tests
 
@@ -169,6 +199,18 @@ note:
 
 ## Property Based Testing
 
+```Haskell
+    describe "reverse" $
+      it "returns the original list if applied twice" $
+        \list -> reverse (reverse list) `shouldBe` list
+```
+
+note:
+- Problem mit Standard-Tests: Welche Fälle werden behandelt, welche werden vergessen
+- Zufallsdaten helfen, aber sind auch nicht perfekt
+- Wäre es nicht super, wenn man **Eigenschaften** überprüfen kann?
+- Property based testing hilft
+
 ---
 
 # Pattern
@@ -188,9 +230,65 @@ note:
 - z. Bsp. Dateien, Daten, Uhrzeit
 - Unit Tests sollen in beliebiger Reihenfolge ausgeführt werden können
 
+--
+
+## Pattern im Code
+
+*Beispiele**
+
 ---
 
 # Ergebnisse & Probleme
+
+note:
+- Das Test sinnvoll sind, haben bestimmt alle verstanden
+- Mit den hier gezeigten Pattern, kann man auch ganz gut implementieren und testen
+- Aber es gibt auch Probleme:
+    1) *Kurs fragen* Wer testet? Wer mag testen?
+       Generell macht testen einfach keinen Spaß... ich will entwickeln
+       Da fehlt Befriedigung etwas zu erreichen
+    2) Was ist die Motivation zu testen? Was ich schreibe funktioniert doch, dass **weiß** ich!
+    3) Funktion sieht schwer testbar aus... aber die funktioniert bestimmt, also teste ich nicht
+
+--
+
+## Was macht der Test?
+
+``` kotlin
+    @Test
+    fun `deleteAll deletes all fields from db`() {
+        // Given: some fields in the db
+        val fieldsInDb = createRandomFields()
+        fieldsAccessor.insert(fieldsInDb)
+        
+        // When: we delete all fields
+        fieldsAccessor.deleteAll()
+        
+        // Then: there are non left
+        val fieldsLeft = fieldsAccessor.getAll()
+        fieldsLeft should beEmpty
+    }
+```
+<!-- .element: class="fragment" -->
+
+
+``` kotlin
+    fun getAll() {
+        // hm... these are not fields
+        return database.allProcesses()
+    }
+```
+<!-- .element: class="fragment" -->
+
+note:
+- Es kann auch Tests geben, die eigentlich gar nichts bringen
+- Hier ein Beispiel von meiner Arbeit
+- *Test erklären*
+- Der Test sieht eigentlich gut aus... aber die zu testene Funktion konnte man auskommentieren
+- In der Implementierung sieht man, dass der Test in Wahrheit überhaupt nichts testet
+- Das ist ein Fall, den man unbedingt vermeiden muss
+
+--
 
 note: 
 - T: Fehler werden übersehen
