@@ -118,7 +118,8 @@ note:
 - Prüfen wie sich die Software unter real Bedingungen verhält
 - Häufig Performance Tests
 - Testen aus der Nutzer Perspektive
-- Kann auch für Kundenvorführung verwendet werden
+- am besten ausführen für alle Use Cases die einem einfallen
+- stellt sicher das Programm bereit ist ausgeliefert zu werden
 
 --
 
@@ -148,6 +149,8 @@ Feedback auf Knopfdruck
 
 note:
 - Unit Tests sind die billigsten Tests
+- sie sollen während der Entwicklung immer wieder ausgeführt werden
+- Integration tests ausführen wenn zuvor getesteter Code abgeändert wird
 - Mid Layer, immer hier automatisieren anstatt in der UI
 - UI Layer, am wenigstens tests, da diese die aufwändigsten Tests sind
 
