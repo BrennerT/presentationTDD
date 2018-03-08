@@ -46,7 +46,7 @@ public class Calculator{
 @Test
 public void addTest(){
     int actual = Calculator.add(1, 2);
-    Assert.AreEqual(3, actual);
+    Assert.areEqual(3, actual);
 }
 ```
 <!-- .element: class="fragment" width="200px"-->
@@ -219,7 +219,7 @@ public void testIsPalindrome(){
     // Given
     String s = "tacocat";
     // When
-    Boolean result = p.isPalindrome(s);
+    Boolean result = isPalindrome(s);
     // Then
     assertThat(result, is(true));
 }
