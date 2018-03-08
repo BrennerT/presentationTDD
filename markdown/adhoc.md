@@ -1,11 +1,3 @@
-# Klassischer Ansatz
-
-note: 
-- Eigene Teams für Testing
-- Oft Outsourcing
-
----
-
 # Tests
 
 note: 
