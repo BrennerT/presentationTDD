@@ -1,11 +1,6 @@
 # Test Driven Development
 
-note: 
-Hauptthema der Präsentation
-
----
-
-# Theorie
+Do kommt noch e Folie zu test first
 
 note: 
 - Software Entwicklungs Prozess
@@ -120,6 +115,10 @@ Evolutionäres Prototyping?
 ---
 
 # Praktische Erfahrungen
+
+- Wie strikt wird TDD eingehalten?
+- Aller Anfang ist schwer
+- 
 
 note: 
 - TDD gegen nicht testen 
