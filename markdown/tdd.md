@@ -1,11 +1,6 @@
 # Test Driven Development
 
-note: 
-Hauptthema der Präsentation
-
----
-
-# Theorie
+Do kommt noch e Folie zu test first
 
 note: 
 - Software Entwicklungs Prozess
@@ -48,7 +43,39 @@ Fehler werden automatisch aufgedeckt
 
 # Beispiel
 
-Primfaktoren ala Uncle Bob
+- `primeFactors` nimmt eine Ganzzahl
+- `primeFactors` gibt eine Liste von Ganzzahlen zurück
+- `primeFactors` berechnet Primfaktoren
+
+--
+
+``` kotlin
+    "1 has no prime factors" {
+        primeFactors(1) 
+    }
+```
+
+``` kotlin 
+    fun primeFactors(n: Int): List<Int> = TODO()
+```
+<!-- .element: class="fragment"-->
+
+--
+
+``` kotlin
+    "1 has no prime factors" {
+        primeFactors(1) shouldEqual emptyList()
+    }
+```
+
+``` kotlin 
+    fun primeFactors(n: Int): List<Int> = emptyList()
+```
+<!-- .element: class="fragment"-->
+
+--
+
+...
 
 ---
 
@@ -88,6 +115,10 @@ Evolutionäres Prototyping?
 ---
 
 # Praktische Erfahrungen
+
+- Wie strikt wird TDD eingehalten?
+- Aller Anfang ist schwer
+- 
 
 note: 
 - TDD gegen nicht testen 

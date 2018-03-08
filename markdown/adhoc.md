@@ -71,7 +71,7 @@ note:
 
 ## Unit Test
 
-```Java
+```java
 public class Calculator{
 
     public static int add(int x, int y){ 
@@ -86,7 +86,7 @@ public class Calculator{
 ``` 
 <!-- .element: class="fragment" width="200px"-->
 
-```Java
+```java
 @Test
 public void addTest(){
     int actual = Calculator.add(1, 2);
@@ -113,7 +113,8 @@ note:
 - Tests sollen in beliebiger Reihenfolge ausführbar sein
 - Falsches Verhalten soll sich nur an einer Stelle zeigen
 - leicht verständlich, unterstützt Dokumentation
-- keine Getter und Setter testen
+- Isolation kann Parallelisierung vereinfachen
+- Getter und Setter teste ja/nein?
 --
 
 ## Integration Test
@@ -142,6 +143,7 @@ note:
 - Testen aus der Nutzer Perspektive
 - am besten ausführen für alle Use Cases die einem einfallen
 - stellt sicher das Programm bereit ist ausgeliefert zu werden
+- Integration -> Zwei Boxen, E2E -> Alle Boxen
 
 --
 
@@ -217,6 +219,7 @@ public void testIsPalindrome(){
 note:
 - Einfaches Beispiel wie der Ansatz gedanklich in JUnit umgesetzt werden kann
 - JBehave wäre aber eine Implementierung dieses Ansatzes für Behaviour Driven Development
+- Hier ist es ein pures Beispiel, aber given-when-then eignet sich auch für State (vgl Stack)
 
 --
 
@@ -332,6 +335,14 @@ note:
 - Das ist ein Fall, den man unbedingt vermeiden muss
 
 --
+## Probleme
+
+- Sinnlose Tests
+- Bugs machen keinen Spaß... Testen auch nicht
+- Mein Code funktioniert!
+- Code schwierig zu testen...
+- Externes Team *PROBLEME*
+- Was bringt geringe Testabdeckung?
 
 note: 
 - T: Fehler werden übersehen
