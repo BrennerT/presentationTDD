@@ -1,11 +1,10 @@
 # Test Driven Development
 
-Do kommt noch e Folie zu test first
-
 note: 
-- Software Entwicklungs Prozess
-- Besteht nicht nur aus Test zu erst schreiben -> Das ist Test First
-- Designstrategie
+- Um die eben genannten Probleme zu lösen wurde ein neuer Ansatz gesucht
+- Erst alle Tests, dann die Klasse
+- Unterschied zum klassischen Test -> Design
+- Welche Antworten will ich haben? vs. Welche Fragen stelle ich?
 
 --
 
@@ -17,9 +16,8 @@ note:
 [https://improuv.com/blog/daniel-zappold/tdd-so-einfach-und-doch-so-schwer](https://improuv.com/blog/daniel-zappold/tdd-so-einfach-und-doch-so-schwer)
 
 note: 
-1) Write a Test -> Was soll meine Komponente machen -> Unterschied zum klassischen Unit Test
-2) Make the Test pass -> Implementierung der Komponente
-3) Refactor
+- Für Agile Softwareentwicklung 
+- Zyklus sorgt dafür das keine unnötigen Funktionen implementiert werden
 
 --
 
@@ -32,8 +30,9 @@ note:
 3) You can't write more production code than is sufficient to pass the currently failing unit test. <!-- .element: class="fragment" height="100px"-->
 
 note: 
-Hier sollen die Regeln nacheinander angezeigt werden
-Fehler werden automatisch aufgedeckt
+- 1 überlegen warum ich überhaupt eine funktion benötige
+- 2 nicht über mehr als eine funktion gleichzeitig nachdenken
+- 3 stellt sicher das kein unnötiger Code geschrieben wird
 
 --
 
@@ -79,15 +78,11 @@ Fehler werden automatisch aufgedeckt
 
 ---
 
-# Pattern
-
-note: 
-- Testbarer Code
-- Entwicklung Bottom Up, Top-Down
+# Ansätze
 
 --
 
-## Top-Down TDD
+## Outside-In TDD
 
 ![top down](../img/tdd-outside-in.jpg)
 
@@ -95,8 +90,8 @@ note:
 [https://image.slidesharecdn.com/tddcommented-130125160145-phpapp01/95/tdd-outsidein-6-638.jpg?cb=1383700832](https://image.slidesharecdn.com/tddcommented-130125160145-phpapp01/95/tdd-outsidein-6-638.jpg?cb=1383700832)
 
 note: 
-System analysieren?
-Was soll mein System machen?
+- Entwicklung von Nutzungsebene ab
+- Mocks werden sehr oft benötigt
 
 --
 
@@ -108,17 +103,16 @@ Was soll mein System machen?
 [https://image.slidesharecdn.com/tddcommented-130125160145-phpapp01/95/tdd-outsidein-4-638.jpg?cb=1383700832](https://image.slidesharecdn.com/tddcommented-130125160145-phpapp01/95/tdd-outsidein-4-638.jpg?cb=1383700832)
 
 note:
-Einzelne Komponenten des Systems beschreiben. 
-Am Ende zusammensetzen.
-Evolutionäres Prototyping?
+- Beginn bei Datenmodelierungsebene
+- Keine Mocks benötigt
 
 ---
 
 # Praktische Erfahrungen
 
-- Wie strikt wird TDD eingehalten?
-- Aller Anfang ist schwer
-- 
+- Wie strikt wird TDD eingehalten?<!-- .element: class="fragment" -->
+- Aller Anfang ist schwer<!-- .element: class="fragment" -->
+- Erfahrungen IBM <!-- .element: class="fragment" -->
 
 note: 
 - TDD gegen nicht testen 
@@ -136,9 +130,16 @@ note:
 
 # Ergebnisse und Probleme
 
+- Anforderungen werden verstanden<!-- .element: class="fragment" -->
+- Keine unnötigen Funktionen werden implementiert <!-- .element: class="fragment" -->
+- Jede Zeile Code ist getestet <!-- .element: class="fragment" -->
+- BDD <!-- .element: class="fragment" -->
+
 note: 
-- Was ist eine Unit?
 - Anforderungen werden verstanden
-- Anfang ist schwer, Neue Frameworks extrem schwer
 - BDD
+* Erweiterung von TDD
+* Tests für Kunden verständlich sein
+* Kunde beschreibt Feature
+* In TDD wird aus Feature abgeleitetes Szenario in Testfall umgewandelt
 - Unit Tests helfen bei der Dokumentation, indem sie beabsichtigte Verwendungen und Reaktionen aufzeigen
