@@ -10,10 +10,10 @@ note:
 
 ## TDD Zyklus
 
-![siehe Tafel](../img/TDD Zyklus.png) <!-- .element: height="350px"-->
+![siehe Tafel](../img/TDD Zyklus.png) <!-- .element: height="300px"-->
 
 ***
-[https://improuv.com/blog/daniel-zappold/tdd-so-einfach-und-doch-so-schwer](https://improuv.com/blog/daniel-zappold/tdd-so-einfach-und-doch-so-schwer)
+[https://improuv.com/blog/daniel-zappold/tdd-so-einfach-und-doch-so-schwer](https://improuv.com/blog/daniel-zappold/tdd-so-einfach-und-doch-so-schwer)<!-- .element: style="font-size: 20px" -->
 
 note: 
 - Für Agile Softwareentwicklung 
@@ -87,7 +87,7 @@ note:
 ![top down](../img/tdd-outside-in.jpg)
 
 ***
-[https://image.slidesharecdn.com/tddcommented-130125160145-phpapp01/95/tdd-outsidein-6-638.jpg?cb=1383700832](https://image.slidesharecdn.com/tddcommented-130125160145-phpapp01/95/tdd-outsidein-6-638.jpg?cb=1383700832)
+[https://image.slidesharecdn.com/tddcommented-130125160145-phpapp01/95/tdd-outsidein-6-638.jpg?cb=1383700832](https://image.slidesharecdn.com/tddcommented-130125160145-phpapp01/95/tdd-outsidein-6-638.jpg?cb=1383700832)<!-- .element: style="font-size: 20px" -->
 
 note: 
 - Entwicklung von Nutzungsebene ab
@@ -100,7 +100,7 @@ note:
 ![bottom up](../img/tdd-bottom-up.jpg)
 
 ***
-[https://image.slidesharecdn.com/tddcommented-130125160145-phpapp01/95/tdd-outsidein-4-638.jpg?cb=1383700832](https://image.slidesharecdn.com/tddcommented-130125160145-phpapp01/95/tdd-outsidein-4-638.jpg?cb=1383700832)
+[https://image.slidesharecdn.com/tddcommented-130125160145-phpapp01/95/tdd-outsidein-4-638.jpg?cb=1383700832](https://image.slidesharecdn.com/tddcommented-130125160145-phpapp01/95/tdd-outsidein-4-638.jpg?cb=1383700832)<!-- .element: style="font-size: 20px" -->
 
 note:
 - Beginn bei Datenmodelierungsebene
@@ -133,13 +133,31 @@ note:
 - Anforderungen werden verstanden<!-- .element: class="fragment" -->
 - Keine unnötigen Funktionen werden implementiert <!-- .element: class="fragment" -->
 - Jede Zeile Code ist getestet <!-- .element: class="fragment" -->
-- BDD <!-- .element: class="fragment" -->
 
 note: 
 - Anforderungen werden verstanden
-- BDD
+- Unit Tests helfen bei der Dokumentation, indem sie beabsichtigte Verwendungen und Reaktionen aufzeigen
+
+---
+
+# Ausblick BDD
+
+![Erweiterung TDD Zyklus](../img/bdd.jpg)<!-- .element: height="300px"-->
+
+***
+[http://blog.apollossc.com/tribunes/agile/lab-n1-tdd-atdd-bdd-cest-quoi-difference/](http://blog.apollossc.com/tribunes/agile/lab-n1-tdd-atdd-bdd-cest-quoi-difference/)<!-- .element: style="font-size: 20px" -->
+
+note:
 * Erweiterung von TDD
 * Tests für Kunden verständlich sein
 * Kunde beschreibt Feature
 * In TDD wird aus Feature abgeleitetes Szenario in Testfall umgewandelt
-- Unit Tests helfen bei der Dokumentation, indem sie beabsichtigte Verwendungen und Reaktionen aufzeigen
+
+-- 
+
+## Beispiel
+
+![Feature zu Szenario](../img/bdd-idee.png)<!-- .element: height="300px"-->
+
+***
+[https://support.smartbear.com/articles/testcomplete/bdd-testing-with-testcomplete/](https://support.smartbear.com/articles/testcomplete/bdd-testing-with-testcomplete/)<!-- .element: style="font-size: 20px" -->
