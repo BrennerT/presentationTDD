@@ -86,7 +86,7 @@ note:
 ![integration test failing](../img/integration-test.jpg)<!-- .element: height="350px" -->
 
 ***
-[https://chriskottom.com/images/unit-tests-passing-no-integration-tests.jpg](https://chriskottom.com/images/unit-tests-passing-no-integration-tests.jpg)<!-- .element: style="font-size: 25px"-->
+[https://chriskottom.com/images/unit-tests-passing-no-integration-tests.jpg](https://chriskottom.com/images/unit-tests-passing-no-integration-tests.jpg)<!-- .element: style="font-size: 20px"-->
 
 note:
 - Integrationstests prüfen ob Komponenten richtig zusammenarbeiten
@@ -118,7 +118,7 @@ note:
 *Beispiel mit Code*
 
 ***
-[White Box Testing and Black Box Testing in Software Testing](https://www.testing-whiz.com/blog/understanding-white-box-testing-and)<!-- .element: style="font-size: 25px" -->
+[White Box Testing and Black Box Testing in Software Testing](https://www.testing-whiz.com/blog/understanding-white-box-testing-and)<!-- .element: style="font-size: 20px" -->
 
 
 note:
@@ -144,7 +144,7 @@ note:
 *Beispiel mit Code*
 
 ***
-[White Box Testing and Black Box Testing in Software Testing](https://www.testing-whiz.com/blog/understanding-white-box-testing-and)<!-- .element: style="font-size: 25px" -->
+[White Box Testing and Black Box Testing in Software Testing](https://www.testing-whiz.com/blog/understanding-white-box-testing-and)<!-- .element: style="font-size: 20px" -->
 
 note:
 - Offensichtlich das Gegenteil
@@ -160,7 +160,7 @@ note:
 ![Tests werden heute nicht auf Knopfdruck gezeigt](../img/test-auf-knopfdruck.jpg)<!-- .element: height="300px" -->
 
 ***
-[https://www.isg-stuttgart.de/fileadmin/_processed_/csm_Fotolia_131459855_L_Testautomatisierung_55885ae42f.jpg](https://www.isg-stuttgart.de/fileadmin/_processed_/csm_Fotolia_131459855_L_Testautomatisierung_55885ae42f.jpg)<!-- .element: style="font-size: 25px" -->
+[https://www.isg-stuttgart.de/fileadmin/_processed_/csm_Fotolia_131459855_L_Testautomatisierung_55885ae42f.jpg](https://www.isg-stuttgart.de/fileadmin/_processed_/csm_Fotolia_131459855_L_Testautomatisierung_55885ae42f.jpg)<!-- .element: style="font-size: 20px" -->
 
 note:
 - Ausgangssituation: (symbolische Ausführung) Entwickler klickt sich vor commit durch einen Ablauf um zu prüfen ob alles noch funktioniert
@@ -177,7 +177,7 @@ Feedback auf Knopfdruck
 ![Das Antipattern will sich nicht zeigen](../img/antipattern-automated-tests.png)<!-- .element: height="350px" -->
 
 ***
-[https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrgB1E6r9R5Sjj2he_81PxP_MkHG5y_XXSiW9M1jx6DmYNPdjHzw](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrgB1E6r9R5Sjj2he_81PxP_MkHG5y_XXSiW9M1jx6DmYNPdjHzw)<!-- .element: style="font-size: 25px"-->
+[https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrgB1E6r9R5Sjj2he_81PxP_MkHG5y_XXSiW9M1jx6DmYNPdjHzw](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrgB1E6r9R5Sjj2he_81PxP_MkHG5y_XXSiW9M1jx6DmYNPdjHzw)<!-- .element: style="font-size: 20px"-->
 
 note:
 - Unit Tests sind die billigsten Tests
@@ -277,7 +277,7 @@ note:
 
 ***
 Martin Fowler
-[https://www.martinfowler.com/articles/mocksArentStubs.html](https://www.martinfowler.com/articles/mocksArentStubs.html)<!-- .element: style="font-size: 25px" --> 
+[https://www.martinfowler.com/articles/mocksArentStubs.html](https://www.martinfowler.com/articles/mocksArentStubs.html)<!-- .element: style="font-size: 20px" --> 
 
 note:
 - Simulieren das Verhalten von realen Objekten

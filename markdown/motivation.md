@@ -12,7 +12,7 @@ Warum wollen wir Softwarequalität?
 ![This image doesnt work](../img/american-airlines-fail.PNG)<!-- .element: height="300px" -->
 
 ***
-[http://www.zeit.de/gesellschaft/zeitgeschehen/2017-11/american-airlines-computerfehler-piloten-weihnachtstage](http://www.zeit.de/gesellschaft/zeitgeschehen/2017-11/american-airlines-computerfehler-piloten-weihnachtstage)<!-- .element: style="font-size: 25px" -->
+[http://www.zeit.de/gesellschaft/zeitgeschehen/2017-11/american-airlines-computerfehler-piloten-weihnachtstage](http://www.zeit.de/gesellschaft/zeitgeschehen/2017-11/american-airlines-computerfehler-piloten-weihnachtstage)<!-- .element: style="font-size: 20px" -->
 
 note:
 - Fehler kosten Geld
@@ -25,7 +25,7 @@ note:
 ![Qualitätskostendiagramm fehlt](../img/qualität-kosten.PNG)
 
 ***
-Folie 38 Softwarequalität Dr. Karsten Brünig<!-- .element: style="font-size=25px"-->
+Folie 38 Softwarequalität Dr. Karsten Brünig<!-- .element: style="font-size=20px" -->
 
 note:
 - Kunden bemerken fehlende Qualität
@@ -39,7 +39,7 @@ note:
 
 ***
 
-[http://i0.kym-cdn.com/photos/images/original/000/146/308/1310190179002.jpg](http://i0.kym-cdn.com/photos/images/original/000/146/308/1310190179002.jpg)<!-- .element: style="font-size: 25px" -->
+[http://i0.kym-cdn.com/photos/images/original/000/146/308/1310190179002.jpg](http://i0.kym-cdn.com/photos/images/original/000/146/308/1310190179002.jpg)<!-- .element: style="font-size: 20px" -->
 
 note: 
 - Wir wissen jetzt, dass Tests für das **Prodult** wichtig sind, aber was ist mit mir als Entwickler?

@@ -10,7 +10,7 @@ note:
 
 ## TDD Zyklus
 
-![siehe Tafel](../img/TDD Zyklus.png) <!-- .element: height="300px"-->
+![siehe Tafel](../img/TDD Zyklus.png) <!-- .element: height="350px"-->
 
 ***
 [https://improuv.com/blog/daniel-zappold/tdd-so-einfach-und-doch-so-schwer](https://improuv.com/blog/daniel-zappold/tdd-so-einfach-und-doch-so-schwer)<!-- .element: style="font-size: 20px" -->
@@ -84,7 +84,7 @@ note:
 
 ## Outside-In TDD
 
-![top down](../img/tdd-outside-in.jpg)
+![top down](../img/tdd-outside-in.jpg)<!-- .element: height="350px" -->
 
 ***
 [https://image.slidesharecdn.com/tddcommented-130125160145-phpapp01/95/tdd-outsidein-6-638.jpg?cb=1383700832](https://image.slidesharecdn.com/tddcommented-130125160145-phpapp01/95/tdd-outsidein-6-638.jpg?cb=1383700832)<!-- .element: style="font-size: 20px" -->
@@ -97,7 +97,7 @@ note:
 
 ## Bottom-Up TDD
 
-![bottom up](../img/tdd-bottom-up.jpg)
+![bottom up](../img/tdd-bottom-up.jpg)<!-- .element: height="350px" -->
 
 ***
 [https://image.slidesharecdn.com/tddcommented-130125160145-phpapp01/95/tdd-outsidein-4-638.jpg?cb=1383700832](https://image.slidesharecdn.com/tddcommented-130125160145-phpapp01/95/tdd-outsidein-4-638.jpg?cb=1383700832)<!-- .element: style="font-size: 20px" -->
