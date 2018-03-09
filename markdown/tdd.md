@@ -3,7 +3,6 @@
 note: 
 - Um die eben genannten Probleme zu lösen wurde ein neuer Ansatz gesucht
 - Erst alle Tests, dann die Klasse
-- Unterschied zum klassischen Test -> Design
 - Welche Antworten will ich haben? vs. Welche Fragen stelle ich?
 
 --
@@ -13,11 +12,13 @@ note:
 ![siehe Tafel](../img/TDD Zyklus.png) <!-- .element: height="350px"-->
 
 ***
-[https://improuv.com/blog/daniel-zappold/tdd-so-einfach-und-doch-so-schwer](https://improuv.com/blog/daniel-zappold/tdd-so-einfach-und-doch-so-schwer)<!-- .element: style="font-size: 20px" -->
+[TDD - so einfach und doch so schwer, Daniel Zappold](https://improuv.com/blog/daniel-zappold/tdd-so-einfach-und-doch-so-schwer)<!-- .element: style="font-size: 20px" -->
 
 note: 
-- Für Agile Softwareentwicklung 
-- Zyklus sorgt dafür das keine unnötigen Funktionen implementiert werden
+- Schritt 1 gibt klaren Fokus, Großes Problem in Teilschritte zerlege
+- Schritt 2 Code erfüllt, Test so einfach wie möglich bestehen
+- Lösungen aus Schritt 2 sind häufig nicht schön -> nicht generisch zum Beispiel
+- Schritt 3 anpassen der Code und Teststruktur das Design optimiert wird
 
 --
 
@@ -29,10 +30,16 @@ note:
 
 3) You can't write more production code than is sufficient to pass the currently failing unit test. <!-- .element: class="fragment" height="100px"-->
 
+***
+[The Three Laws of Test-Driven-Development, Uncle Bob](http://programmer.97things.oreilly.com/wiki/index.php/The_Three_Laws_of_Test-Driven_Development)<!-- .element: style="font-size:20px" -->
+
 note: 
-- 1 überlegen warum ich überhaupt eine funktion benötige
-- 2 nicht über mehr als eine funktion gleichzeitig nachdenken
-- 3 stellt sicher das kein unnötiger Code geschrieben wird
+Vorteile
+- Debugging
+- Courage
+- Documentation
+- Design
+- Professionalism
 
 --
 
@@ -79,25 +86,11 @@ note:
 ---
 
 # Ansätze
-
---
-
-## Outside-In TDD
-
-![top down](../img/tdd-outside-in.jpg)<!-- .element: height="350px" -->
-
-***
-[https://image.slidesharecdn.com/tddcommented-130125160145-phpapp01/95/tdd-outsidein-6-638.jpg?cb=1383700832](https://image.slidesharecdn.com/tddcommented-130125160145-phpapp01/95/tdd-outsidein-6-638.jpg?cb=1383700832)<!-- .element: style="font-size: 20px" -->
-
-note: 
-- Entwicklung von Nutzungsebene ab
-- Mocks werden sehr oft benötigt
-
 --
 
 ## Bottom-Up TDD
 
-![bottom up](../img/tdd-bottom-up.jpg)<!-- .element: height="350px" -->
+![bottom up](../img/bottom-up-tdd.png)<!-- .element: height="350px" -->
 
 ***
 [https://image.slidesharecdn.com/tddcommented-130125160145-phpapp01/95/tdd-outsidein-4-638.jpg?cb=1383700832](https://image.slidesharecdn.com/tddcommented-130125160145-phpapp01/95/tdd-outsidein-4-638.jpg?cb=1383700832)<!-- .element: style="font-size: 20px" -->
@@ -105,6 +98,20 @@ note:
 note:
 - Beginn bei Datenmodelierungsebene
 - Keine Mocks benötigt
+
+
+--
+
+## Outside-In TDD
+
+![top down](../img/outside-in-tdd.jpg)<!-- .element: height="350px" -->
+
+***
+[https://image.slidesharecdn.com/tddcommented-130125160145-phpapp01/95/tdd-outsidein-6-638.jpg?cb=1383700832](https://image.slidesharecdn.com/tddcommented-130125160145-phpapp01/95/tdd-outsidein-6-638.jpg?cb=1383700832)<!-- .element: style="font-size: 20px" -->
+
+note: 
+- Entwicklung von Nutzungsebene ab
+- Mocks werden sehr oft benötigt
 
 ---
 
@@ -145,7 +152,7 @@ note:
 ![Erweiterung TDD Zyklus](../img/bdd.jpg)<!-- .element: height="300px"-->
 
 ***
-[http://blog.apollossc.com/tribunes/agile/lab-n1-tdd-atdd-bdd-cest-quoi-difference/](http://blog.apollossc.com/tribunes/agile/lab-n1-tdd-atdd-bdd-cest-quoi-difference/)<!-- .element: style="font-size: 20px" -->
+[http://blog.apollossc.com/wp-content/uploads/2017/11/bdd2.png](http://blog.apollossc.com/wp-content/uploads/2017/11/bdd2.png)<!-- .element: style="font-size: 20px" -->
 
 note:
 * Erweiterung von TDD
@@ -160,4 +167,4 @@ note:
 ![Feature zu Szenario](../img/bdd-idee.png)<!-- .element: height="300px"-->
 
 ***
-[https://support.smartbear.com/articles/testcomplete/bdd-testing-with-testcomplete/](https://support.smartbear.com/articles/testcomplete/bdd-testing-with-testcomplete/)<!-- .element: style="font-size: 20px" -->
+[BDD TESTING WITH TESTCOMPLETE, SmartBear Software](https://support.smartbear.com/articles/testcomplete/bdd-testing-with-testcomplete/)<!-- .element: style="font-size: 20px" -->

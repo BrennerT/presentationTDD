@@ -3,7 +3,6 @@
 note: 
 Warum wollen wir Softwarequalität?
 - Software in fast allen Bereichen des täglichen Lebens
-- Drucker, Ampeln, Raketen etc.
 
 -- 
 
@@ -12,11 +11,12 @@ Warum wollen wir Softwarequalität?
 ![This image doesnt work](../img/american-airlines-fail.PNG)<!-- .element: height="300px" -->
 
 ***
-[http://www.zeit.de/gesellschaft/zeitgeschehen/2017-11/american-airlines-computerfehler-piloten-weihnachtstage](http://www.zeit.de/gesellschaft/zeitgeschehen/2017-11/american-airlines-computerfehler-piloten-weihnachtstage)<!-- .element: style="font-size: 20px" -->
+[Fluglinie gibt versehentlich zahlreichen Piloten frei, Zeit Online](http://www.zeit.de/gesellschaft/zeitgeschehen/2017-11/american-airlines-computerfehler-piloten-weihnachtstage)<!-- .element: style="font-size: 20px" -->
 
 note:
 - Fehler kosten Geld
 - Qualität kostet aber auch Geld
+- Wann gebe ich zuviel bzw. zu wenig für Qualität aus?
 
 -- 
 
@@ -28,8 +28,11 @@ note:
 Folie 38 Softwarequalität Dr. Karsten Brünig<!-- .element: style="font-size=20px" -->
 
 note:
-- Kunden bemerken fehlende Qualität
-- Vorhandene Qualität fördert Kundenbeziehung
+- X Aufwand für Fehlersuche
+- Y Kosten 
+- Nicht suchen = Hohe Kosten
+- Viel suchen = hohe Kosten
+- Optimum wenn Kosten für Fehlersuche und Kosten eines Fehlers sich schneiden
 
 -- 
 

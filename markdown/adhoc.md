@@ -1,22 +1,21 @@
 # Tests
 
 note: 
-Ziel: Herausfinden ob Softwarefehler enthält
-Was ist ein Softwaretest? 
+- Wir wissen nun das wir Softwarequalität brauchen
+- Wie erreichen wir sie?
+- Was ist ein Softwaretest? 
 
 --
 
 ## Definition Softwaretest
 
->"Programm testing can be used to show the presence of Bugs, but never their absence"
+>"Program testing can be a very effective way to show the presence of bugs, but is hopelessly inadequate for showing their absence."
 
-Edsger W. Dijkstra
+[The Humble Programmer, Edsger W. Dijkstra](http://www.cs.utexas.edu/~EWD/transcriptions/EWD03xx/EWD340.html)
 
 note: 
 - Testen = stichprobenartiges Prüfen
-- keine Verifikation, d.h. Korrektheit durch logische Schlussfolgerung beweisen
-- Ziel, vollständige Testabdeckung
-- Problem, wie werden Tests ausgeführt? durchklicken oder automatisiert
+- keine Verifikation, d.h. Korrektheit nur durch logische Schlussfolgerung beweisbar
 
 -- 
 
@@ -52,9 +51,26 @@ public void addTest(){
 <!-- .element: class="fragment" width="200px"-->
 
 note:
-- Testen einer Komponente der Software
-- Ziel: fehlerfreie Funktion jeder einzelnen Komponente
-- Black-Box Test
+- Testen einer Einheit der Software
+- Ziel: fehlerfreie Funktion jeder einzelnen Einheit
+- Problem: Was ist eine Einheit?
+
+--
+
+## Was ist eine Unit?
+
+*"smallest piece of software"*, MSDN
+
+*"unit of work"*, The Art of Unit Testing - Roy Osherove
+
+***
+[What exactly is a "unit" in unit testing?, Rui Figueiredo](https://www.blinkingcaret.com/2016/04/27/what-exactly-is-a-unit-in-unit-testing/)<!-- .element: style="font-size: 20px" -->
+
+note:
+- Nennt unterschiedliche definition aus der Literatur 
+- unit of work bezeichnet summe aller aktionen die zwischem dem aufruf einer Methode und einem durch einen Test messbaren ergebniss stehen 
+- Schlussfolgerung -> Unit ist logischer Pfad den das ausführen einer Methode benötigt
+
 --
 
 ## Was zeichnet gute Unit Tests aus
@@ -65,20 +81,15 @@ note:
 - testen relevanten Code <!-- .element: class="fragment" -->
 - weisen genauso hohe Code Qualität auf, wie der Produktiv Code selbst <!-- .element: class="fragment" -->
 
+***
+[Unit-Tests, it-agile](https://www.it-agile.de/wissen/agiles-engineering/unit-tests/)<!-- .element: style="font-size:20px" -->
+
 note: 
-- Tests sollen in beliebiger Reihenfolge ausführbar sein
+- Tests sollen in beliebiger Reihenfolge ausführbar sein -> Parrallelisierung
 - Falsches Verhalten soll sich nur an einer Stelle zeigen
 - leicht verständlich, unterstützt Dokumentation
-- Isolation kann Parallelisierung vereinfachen
-- Getter und Setter teste ja/nein?
-
---
-
-## Was ist eine Unit?
-
-*"smallest piece of software"* <!-- .element: class="fragment" -->
-
-*"unit of work"*<!-- .element: class="fragment" -->
+- Getter und Setter testen ja/nein?
+- Reichen Unit Tests aus?
 
 --
 ## Integration Test
@@ -89,11 +100,8 @@ note:
 [https://chriskottom.com/images/unit-tests-passing-no-integration-tests.jpg](https://chriskottom.com/images/unit-tests-passing-no-integration-tests.jpg)<!-- .element: style="font-size: 20px"-->
 
 note:
+- Logik die zwischen den Komponenten Existiert kann fehlschlagen
 - Integrationstests prüfen ob Komponenten richtig zusammenarbeiten
-- Prüfen ob die Logik funktioniert wie geplant
-- Testen der Kopplung der Komponenten
-- System wird als White-Box betrachtet
-- Jede Systemkomponente muss zuvor getestet werden
 - Ziel: Fehlerfreies zusammenwirken der Systemkomponenten
 
 --
@@ -101,13 +109,13 @@ note:
 
 ![end to end example](../img/end-to-end-example.png)
 
-note: 
-- Prüfen wie sich die Software unter real Bedingungen verhält
-- Häufig Performance Tests
+***
+[Why End to End Testing is Necessary and How to Perform It?](http://www.softwaretestinghelp.com/what-is-end-to-end-testing/)<!-- .element: style="font-size:20px" -->
+note:
 - Testen aus der Nutzer Perspektive
-- am besten ausführen für alle Use Cases die einem einfallen
-- stellt sicher das Programm bereit ist ausgeliefert zu werden
-- Integration -> Zwei Boxen, E2E -> Alle Boxen
+- Prüfen wie sich die Software unter realen Bedingungen verhält
+- Integration -> Zwei Boxen
+- E2E -> Alle Boxen
 
 -- 
 
@@ -163,12 +171,10 @@ note:
 [https://www.isg-stuttgart.de/fileadmin/_processed_/csm_Fotolia_131459855_L_Testautomatisierung_55885ae42f.jpg](https://www.isg-stuttgart.de/fileadmin/_processed_/csm_Fotolia_131459855_L_Testautomatisierung_55885ae42f.jpg)<!-- .element: style="font-size: 20px" -->
 
 note:
-- Ausgangssituation: (symbolische Ausführung) Entwickler klickt sich vor commit durch einen Ablauf um zu prüfen ob alles noch funktioniert
-- Problem: Sehr Fehler anfällig -> nicht alle Fehler werden erkannt
-- Lösung: Tests werden automatisiert -> Ergebnisse auf Knopfdruck
-- Vorteile: 
-erleichtert das Testen in Druckphasen eines Projektes
-Feedback auf Knopfdruck
+- Wir wissen Jetzt was für Tests es gibt
+- Sollen wir sie automatisieren?
+- Testen von Hand fehler anfällig, dauert lange
+- Testen auf Knopfdruck gibt direktes Feedback, Nimmt angst Code zu bearbeiten
 
 --
 
@@ -177,21 +183,21 @@ Feedback auf Knopfdruck
 ![Das Antipattern will sich nicht zeigen](../img/antipattern-automated-tests.png)<!-- .element: height="350px" -->
 
 ***
-[https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrgB1E6r9R5Sjj2he_81PxP_MkHG5y_XXSiW9M1jx6DmYNPdjHzw](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrgB1E6r9R5Sjj2he_81PxP_MkHG5y_XXSiW9M1jx6DmYNPdjHzw)<!-- .element: style="font-size: 20px"-->
+[Best Testing Practices for Agile Teams: The Automation Pyramid, Sofia Palamarchuk](https://abstracta.us/blog/test-automation/best-testing-practices-for-agile-teams-the-automation-pyramid/)<!-- .element: style="font-size: 20px"-->
 
 note:
 - Unit Tests sind die billigsten Tests
-- sie sollen während der Entwicklung immer wieder ausgeführt werden
-- Integration tests ausführen wenn zuvor getesteter Code abgeändert wird
-- Mid Layer, immer hier automatisieren anstatt in der UI
-- UI Layer, am wenigstens tests, da diese die aufwändigsten Tests sind
+- GUI Tests umfangreich und Einheiten übergreifend -> Unit Tests geben Präzisere Fehler
+- Weniger Exploratives Testen und Bug Suche am Ende
+- Wir wissen jetzt das es sinnvoll ist automatisierte Tests zu schreiben
+- Wie formuliere ich einen Test?
 
 ---
 
-# Styles 
+# Stile 
 
 note:
-- wie werden Tests geschrieben
+- Zu Orientierung wie man Tests schreibt
 
 --
 
@@ -203,11 +209,11 @@ note:
 - **When** i do something </br>
 - **Then** the following outcome should be observed
 
+*** 
+[GivenWhenThen, Martin Fowler](https://martinfowler.com/bliki/GivenWhenThen.html)<!-- .element: style="font-size:20px" -->
+
 note: 
-- Beschreiben eines Szenarios mit bestimmten Schlüsselwörtern
-- given beschreibt die Bedinungen vorher
-- when beschreibt das verhalten der Anwendung
-- then beschreibt Änderungen die danach beobachtet werden können
+- Ein Szenario in Worten beschreiben um es später als Test umsetzen zu können
 
 --
 
@@ -224,11 +230,6 @@ public void testIsPalindrome(){
     assertThat(result, is(true));
 }
 ```
-
-note:
-- Einfaches Beispiel wie der Ansatz gedanklich in JUnit umgesetzt werden kann
-- JBehave wäre aber eine Implementierung dieses Ansatzes für Behaviour Driven Development
-- Hier ist es ein pures Beispiel, aber given-when-then eignet sich auch für State (vgl Stack)
 
 --
 
@@ -276,8 +277,7 @@ note:
 **Fake**: Besitzt eine funktionierende Implementation
 
 ***
-Martin Fowler
-[https://www.martinfowler.com/articles/mocksArentStubs.html](https://www.martinfowler.com/articles/mocksArentStubs.html)<!-- .element: style="font-size: 20px" --> 
+[Mocks aren't Stubs, Martin Fowler](https://www.martinfowler.com/articles/mocksArentStubs.html)<!-- .element: style="font-size: 20px" --> 
 
 note:
 - Simulieren das Verhalten von realen Objekten
