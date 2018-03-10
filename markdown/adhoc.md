@@ -252,7 +252,7 @@ Beispiel:
 
 ## Mocks
 
-**Mock**: simuliert das Verhalten eines realen Objektes in einem vorgegebenen Weg</br>
+>**Mock**: simuliert das Verhalten eines realen Objektes in einem vorgegebenen Weg</br>
 
 note: 
 - a mock cook - an undercover cop following a script pretending to be a cook in a sting operation.
@@ -261,7 +261,7 @@ note:
 
 ## Fakes
 
-**Fake**: Besitzt eine funktionierende Implementation
+>**Fake**: Besitzt eine funktionierende Implementation
 
 note: 
 - a fake cook - a someone pretending to be a cook by using frozen dinners and a microwave,
