@@ -55,6 +55,8 @@ Vorteile
 
 --
 
+### Test & Implement
+
 ``` kotlin
     "1 has no prime factors" {
         primeFactors(1) 
@@ -67,6 +69,8 @@ Vorteile
 <!-- .element: class="fragment"-->
 
 --
+
+### Test & Implement
 
 ``` kotlin
     "1 has no prime factors" {
@@ -81,7 +85,238 @@ Vorteile
 
 --
 
-...
+### Test & Implement
+
+``` kotlin
+    "2 has prime factors [2]" {
+        primeFactors(2) shouldEqual listOf(2)
+    }
+```
+
+``` kotlin
+    fun primeFactors(n: Int): List<Int> =
+        if (n == 1) emptyList()
+        else listOf(2)
+```
+<!-- .element: class="fragment"-->
+
+
+--
+
+### Test & Implement
+
+``` kotlin
+    "3 has prime factors [3]" {
+        primeFactors(2) shouldEqual listOf(2)
+    }
+```
+
+``` kotlin
+    fun primeFactors(n: Int): List<Int> =
+        if (n == 1) emptyList()
+        if (n == 3) listOf(3)
+        else listOf(2)
+```
+<!-- .element: class="fragment"-->
+
+--
+
+### Refactor
+
+``` kotlin
+    fun primeFactors(n: Int): List<Int> =
+        if (n == 1) emptyList()
+        else listOf(n)
+```
+
+--
+
+### Test & Implement
+
+``` kotlin
+    "4 has prime factors [2, 2]" {
+        primeFactors(4) shouldEqual listOf(2, 2)
+    }
+```
+
+``` kotlin
+    fun primeFactors(n: Int): List<Int> =
+        if (n == 1) emptyList()
+        else if (n == 4) listOf(2, 2)
+        else listOf(n)
+```
+<!-- .element: class="fragment"-->
+
+
+--
+
+### Test & Implement
+
+``` kotlin
+    "6 has prime factors [2, 3]" {
+        primeFactors(6) shouldEqual listOf(2, 3)
+    }
+```
+
+``` kotlin
+    fun primeFactors(n: Int): List<Int> =
+        if (n == 1) emptyList()
+        else if (n == 4) listOf(2, 2)
+        else if (n == 6) listOf(2, 3)
+        else listOf(n)
+```
+<!-- .element: class="fragment"-->
+
+--
+
+### Refactor
+
+
+``` kotlin
+    fun primeFactors(n: Int): List<Int> =
+        if (n == 1) emptyList()
+        if (n > 2 && n % 2 == 0) listOf(2, n / 2)
+        else listOf(n)
+```
+
+
+--
+
+### Test & Implement
+
+``` kotlin
+    "8 has prime factors [2, 2, 2]" {
+        primeFactors(8) shouldEqual listOf(2, 2, 2)
+    }
+```
+
+``` kotlin
+    fun primeFactors(n: Int): List<Int> =
+        if (n == 1) emptyList()
+        if (n == 8) listOf(2, 2, 2)
+        if (n > 2 && n % 2 == 0) listOf(2, n / 2)
+        else listOf(n)
+```
+<!-- .element: class="fragment"-->
+
+
+--
+
+### Refactor
+
+``` kotlin
+    fun primeFactors(n: Int): List<Int> {
+        if (n == 1) return emptyList()
+
+        var nn = n
+        val result = mutableListOf<Int>()
+        while (nn > 2 && nn % 2 == 0) {
+            result.add(2)
+            nn /= 2
+        }
+        if (nn != 1) {
+            result.add(nn)
+        }
+
+        return result
+    }
+```
+
+
+--
+
+### Test & Implement
+
+``` kotlin
+    "9 has prime factors [3, 3]" {
+        primeFactors(9) shouldEqual listOf(3, 3)
+    }
+```
+
+``` kotlin
+    fun primeFactors(n: Int): List<Int> {
+        if (n == 1) return emptyList()
+
+        var nn = n
+        val result = mutableListOf<Int>()
+        while (nn > 2 && nn % 2 == 0) {
+            result.add(2)
+            nn /= 2
+        }
+        while (nn > 3 && nn % 3 == 0) {
+            result.add(3)
+            nn /= 3
+        }
+        if (nn != 1) {
+            result.add(nn)
+        }
+
+        return result
+    }
+```
+<!-- .element: class="fragment"-->
+
+
+--
+
+### Refactor
+
+``` kotlin
+    fun primeFactors(n: Int): List<Int> {
+        if (n == 1) return emptyList()
+
+        var nn = n
+        val result = mutableListOf<Int>()
+
+        for (factor in 2 .. n) {
+            while (nn > factor && nn % factor == 0) {
+                result.add(factor)
+                nn /= factor
+            }
+        }
+        if (nn != 1) {
+            result.add(nn)
+        }
+
+        return result
+    }
+```
+<!-- .element: height=500px -->
+
+--
+
+### Test 
+
+``` kotlin
+    "prime factors works for really big numbers" {
+        val primeFactors = listOf(2, 2, 3, 3, 3, 31, 31, 41)
+        val n = primeFactors.reduce(Int::times)
+
+        primeFactors(n) shouldBe primeFactors
+    }
+```
+
+--
+
+### Refactor
+
+``` kotlin
+    fun primeFactors(n: Int): List<Int> {
+        if (n == 1) return emptyList()
+
+        var nn = n
+        val result = mutableListOf<Int>()
+
+        for (factor in 2 .. n) {
+            while ( nn % factor == 0) {
+                result.add(factor)
+                nn /= factor
+            }
+        }
+
+        return result
+    }
+```
 
 ---
 
