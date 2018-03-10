@@ -94,7 +94,7 @@ note:
 --
 ## Integration Test
 
-![integration test failing](../img/integration-test.jpg)<!-- .element: height="350px" -->
+![integration test failing](img/integration-test.jpg)<!-- .element: height="350px" -->
 
 ***
 [https://chriskottom.com/images/unit-tests-passing-no-integration-tests.jpg](https://chriskottom.com/images/unit-tests-passing-no-integration-tests.jpg)<!-- .element: style="font-size: 20px"-->
@@ -107,7 +107,7 @@ note:
 --
 ## End-to-End Test
 
-![end to end example](../img/end-to-end-example.png)
+![end to end example](img/end-to-end-example.png)
 
 ***
 [Why End to End Testing is Necessary and How to Perform It?](http://www.softwaretestinghelp.com/what-is-end-to-end-testing/)<!-- .element: style="font-size:20px" -->
@@ -121,7 +121,7 @@ note:
 
 ## Black Box Tests
 
-![black box](../img/blackbox.PNG)
+![black box](img/blackbox.PNG)
 
 - Grenzwertanalyse  <!-- .element: class="fragment" -->
 - Equivalenzklassen <!-- .element: class="fragment" -->
@@ -150,7 +150,7 @@ note:
 
 ## White Box Tests
 
-![white box](../img/whitebox.PNG)
+![white box](img/whitebox.PNG)
 
 - Kontrollfluss  <!-- .element: class="fragment" -->
 - Datenfluss <!-- .element: class="fragment" -->
@@ -169,7 +169,7 @@ note:
 
 ## Testautomatisierung
 
-![Tests werden heute nicht auf Knopfdruck gezeigt](../img/test-auf-knopfdruck.jpg)<!-- .element: height="300px" -->
+![Tests werden heute nicht auf Knopfdruck gezeigt](img/test-auf-knopfdruck.jpg)<!-- .element: height="300px" -->
 
 ***
 [https://www.isg-stuttgart.de/fileadmin/_processed_/csm_Fotolia_131459855_L_Testautomatisierung_55885ae42f.jpg](https://www.isg-stuttgart.de/fileadmin/_processed_/csm_Fotolia_131459855_L_Testautomatisierung_55885ae42f.jpg)<!-- .element: style="font-size: 20px" -->
@@ -184,7 +184,7 @@ note:
 
 ## Automatisierungs Pyramide
 
-![Das Antipattern will sich nicht zeigen](../img/antipattern-automated-tests.png)<!-- .element: height="350px" -->
+![Das Antipattern will sich nicht zeigen](img/antipattern-automated-tests.png)<!-- .element: height="350px" -->
 
 ***
 [Best Testing Practices for Agile Teams: The Automation Pyramid, Sofia Palamarchuk](https://abstracta.us/blog/test-automation/best-testing-practices-for-agile-teams-the-automation-pyramid/)<!-- .element: style="font-size: 20px"-->
@@ -202,13 +202,13 @@ note:
 
 --
 
-## Was kann man testen?
+## Einfach zu testen
 
-Einfach zu testen:
 - Funktionaler Code
 - Interfaces
 
-Schwierig zu testen:
+## Schwer zu testen
+
 - (globaler) State
 - Seiteneffekte
 
