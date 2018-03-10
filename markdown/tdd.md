@@ -9,7 +9,7 @@ note:
 
 ## TDD Zyklus
 
-![siehe Tafel](../img/TDD Zyklus.png) <!-- .element: height="350px"-->
+![siehe Tafel](img/TDD Zyklus.png) <!-- .element: height="350px"-->
 
 ***
 [TDD - so einfach und doch so schwer, Daniel Zappold](https://improuv.com/blog/daniel-zappold/tdd-so-einfach-und-doch-so-schwer)<!-- .element: style="font-size: 20px" -->
@@ -44,7 +44,7 @@ Vorteile
 -- 
 ## Bottom-Up TDD
 
-![bottom up](../img/bottom-up-tdd.png)<!-- .element: height="350px" -->
+![bottom up](img/bottom-up-tdd.png)<!-- .element: height="350px" -->
 
 ***
 [https://image.slidesharecdn.com/tddcommented-130125160145-phpapp01/95/tdd-outsidein-4-638.jpg?cb=1383700832](https://image.slidesharecdn.com/tddcommented-130125160145-phpapp01/95/tdd-outsidein-4-638.jpg?cb=1383700832)<!-- .element: style="font-size: 20px" -->
@@ -58,7 +58,7 @@ note:
 
 ## Outside-In TDD
 
-![top down](../img/outside-in-tdd.jpg)<!-- .element: height="350px" -->
+![top down](img/outside-in-tdd.jpg)<!-- .element: height="350px" -->
 
 ***
 [https://image.slidesharecdn.com/tddcommented-130125160145-phpapp01/95/tdd-outsidein-6-638.jpg?cb=1383700832](https://image.slidesharecdn.com/tddcommented-130125160145-phpapp01/95/tdd-outsidein-6-638.jpg?cb=1383700832)<!-- .element: style="font-size: 20px" -->
@@ -71,7 +71,7 @@ note:
 
 ## Greybox 
 
-![Greybox](../img/greybox.jpeg)
+![Greybox](img/greybox.jpeg)
 
 ***
 [Grey-Box-Testing: entwicklungsnah testen](https://jaxenter.de/grey-box-testing-entwicklungsnah-testen-28915)<!-- .element: style="font-size:20px" -->
@@ -389,8 +389,8 @@ note:
 
 ## Geringere Defect Rate
 
-![Klassisch](../img/ibm-adhoc.png)<!-- .element: style="height: 180px" -->
-![TDD](../img/ibm-tdd.png)<!-- .element: style="height: 220px" -->
+![Klassisch](img/ibm-adhoc.png)<!-- .element: style="height: 180px" -->
+![TDD](img/ibm-tdd.png)<!-- .element: style="height: 220px" -->
 
 ***
 
@@ -427,7 +427,7 @@ note:
 
 # Ausblick BDD
 
-![Erweiterung TDD Zyklus](../img/bdd.jpg)<!-- .element: height="300px"-->
+![Erweiterung TDD Zyklus](img/bdd.jpg)<!-- .element: height="300px"-->
 
 ***
 [http://blog.apollossc.com/wp-content/uploads/2017/11/bdd2.png](http://blog.apollossc.com/wp-content/uploads/2017/11/bdd2.png)<!-- .element: style="font-size: 20px" -->
@@ -442,7 +442,7 @@ note:
 
 ## Beispiel
 
-![Feature zu Szenario](../img/bdd-idee.png)<!-- .element: height="300px"-->
+![Feature zu Szenario](img/bdd-idee.png)<!-- .element: height="300px"-->
 
 ***
 [BDD TESTING WITH TESTCOMPLETE, SmartBear Software](https://support.smartbear.com/articles/testcomplete/bdd-testing-with-testcomplete/)<!-- .element: style="font-size: 20px" -->

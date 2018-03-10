@@ -8,7 +8,7 @@ Warum wollen wir Softwarequalität?
 
 ## Auswirkungen von Softwarefehlern
 
-![This image doesnt work](../img/american-airlines-fail.PNG)<!-- .element: height="300px" -->
+![This image doesnt work](img/american-airlines-fail.PNG)<!-- .element: height="300px" -->
 
 ***
 [Fluglinie gibt versehentlich zahlreichen Piloten frei, Zeit Online](http://www.zeit.de/gesellschaft/zeitgeschehen/2017-11/american-airlines-computerfehler-piloten-weihnachtstage)<!-- .element: style="font-size: 20px" -->
@@ -22,7 +22,7 @@ note:
 
 ## Wann lohnt sich Qualität?
 
-![Qualitätskostendiagramm fehlt](../img/qualität-kosten.PNG)
+![Qualitätskostendiagramm fehlt](img/qualität-kosten.PNG)
 
 ***
 Folie 38 Softwarequalität Dr. Karsten Brünig<!-- .element: style="font-size=20px" -->
@@ -38,7 +38,7 @@ note:
 
 ### Wenn man Bugs fixen muss
 
-![Sad pepe](../img/sad-pepe.JPG)<!-- .element: style="height: 400px" -->
+![Sad pepe](img/sad-pepe.JPG)<!-- .element: style="height: 400px" -->
 
 note: 
 - Wir wissen jetzt, dass Tests für das **Prodult** wichtig sind, aber was ist mit mir als Entwickler?
@@ -49,5 +49,5 @@ note:
 
 ### Wann man Bugs *in schlechtem Code* fixen muss
 
-![Very sad pepe](../img/suicide-pepe.jpg)<!-- .element: style="height: 400px" -->
+![Very sad pepe](img/suicide-pepe.jpg)<!-- .element: style="height: 400px" -->
 

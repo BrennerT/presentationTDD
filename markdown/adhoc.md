@@ -259,6 +259,9 @@ Beispiel:
 
 >**Mock**: simuliert das Verhalten eines realen Objektes in einem vorgegebenen Weg</br>
 
+***
+[Mocks aren't Stubs, Martin Fowler](https://www.martinfowler.com/articles/mocksArentStubs.html)<!-- .element: style="font-size: 20px" --> 
+
 note: 
 - a mock cook - an undercover cop following a script pretending to be a cook in a sting operation.
 
@@ -267,6 +270,9 @@ note:
 ## Fakes
 
 >**Fake**: Besitzt eine funktionierende Implementation
+
+***
+[Mocks aren't Stubs, Martin Fowler](https://www.martinfowler.com/articles/mocksArentStubs.html)<!-- .element: style="font-size: 20px" --> 
 
 note: 
 - a fake cook - a someone pretending to be a cook by using frozen dinners and a microwave,
