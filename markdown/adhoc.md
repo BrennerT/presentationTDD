@@ -198,62 +198,7 @@ note:
 
 ---
 
-# Stile 
-
-note:
-- Zu Orientierung wie man Tests schreibt
-
---
-
-## Given-When-Then
-
-**Scenario**:
-
-- **Given** certain preconditions </br>
-- **When** i do something </br>
-- **Then** the following outcome should be observed
-
-*** 
-[GivenWhenThen, Martin Fowler](https://martinfowler.com/bliki/GivenWhenThen.html)<!-- .element: style="font-size:20px" -->
-
-note: 
-- Ein Szenario in Worten beschreiben um es später als Test umsetzen zu können
-
---
-
-## Given-When-Then
-
-```Java
-@Test
-public void testIsPalindrome(){
-    // Given
-    String s = "tacocat";
-    // When
-    Boolean result = isPalindrome(s);
-    // Then
-    assertThat(result, is(true));
-}
-```
-
---
-
-## Property Based Testing
-
-```Haskell
-    describe "reverse" $
-      it "returns the original list if applied twice" $
-        \list -> reverse (reverse list) `shouldBe` list
-```
-
-note:
-- Problem mit Standard-Tests: Welche Fälle werden behandelt, welche werden vergessen
-- Zufallsdaten helfen, aber sind auch nicht perfekt
-- Wäre es nicht super, wenn man **Eigenschaften** überprüfen kann?
-- Property based testing hilft
-
----
-
-# Pattern
+# Mocks
 
 --
 
@@ -290,11 +235,9 @@ note:
 
 -- 
 
-## Stubs / Mocks / Fakes
+## Stubs
 
 >**Stub**: stellt vorgefertigte Antworten zur Verfügung</br>
-**Mock**: simuliert das Verhalten eines realen Objektes in einem vorgegebenen Weg</br>
-**Fake**: Besitzt eine funktionierende Implementation
 
 ***
 [Mocks aren't Stubs, Martin Fowler](https://www.martinfowler.com/articles/mocksArentStubs.html)<!-- .element: style="font-size: 20px" --> 
@@ -303,9 +246,25 @@ note:
 - Simulieren das Verhalten von realen Objekten
 - Interface ist identisch mit dem des simulierten Objekts
 Beispiel:
-- a fake cook - a someone pretending to be a cook by using frozen dinners and a microwave,
 - a stub cook - a hot dog vendor that always gives you hot dogs no matter what you order, or
+
+-- 
+
+## Mocks
+
+**Mock**: simuliert das Verhalten eines realen Objektes in einem vorgegebenen Weg</br>
+
+note: 
 - a mock cook - an undercover cop following a script pretending to be a cook in a sting operation.
+
+--
+
+## Fakes
+
+**Fake**: Besitzt eine funktionierende Implementation
+
+note: 
+- a fake cook - a someone pretending to be a cook by using frozen dinners and a microwave,
 
 ---
 
@@ -320,6 +279,31 @@ note:
        Da fehlt Befriedigung etwas zu erreichen
     2) Was ist die Motivation zu testen? Was ich schreibe funktioniert doch, dass **weiß** ich!
     3) Funktion sieht schwer testbar aus... aber die funktioniert bestimmt, also teste ich nicht
+
+--
+
+## Probleme
+
+- Sinnlose Tests
+- Bugs machen keinen Spaß... Testen auch nicht
+- Mein Code funktioniert!
+- Code schwierig zu testen...
+- Was bringt geringe Testabdeckung?
+
+note: 
+- T: Fehler werden übersehen
+    
+- D: Warum Testen, das funktioniert
+- D: Macht der Tests wirklich etwas?
+- D: Code untestbar geschrieben
+- D: Wer muss Tests schreiben? -> Tests sucken
+- T: Externes Team ist schlecht
+    externe Teams sind billiger
+    Personalaufwand
+    Testteam nervt -> Entwickler haben weniger Spaß
+- T: Geringe Testabdeckung ist schlechter als gar keine Tests
+    geben das gefühl man hätte etwas getestet, dass ist aber nicht wirklich so
+    viele Tests bleiben unentdeckt
 
 --
 
@@ -358,28 +342,3 @@ note:
 - Der Test sieht eigentlich gut aus... aber die zu testene Funktion konnte man auskommentieren
 - In der Implementierung sieht man, dass der Test in Wahrheit überhaupt nichts testet
 - Das ist ein Fall, den man unbedingt vermeiden muss
-
---
-## Probleme
-
-- Sinnlose Tests
-- Bugs machen keinen Spaß... Testen auch nicht
-- Mein Code funktioniert!
-- Code schwierig zu testen...
-- Externes Team *PROBLEME*
-- Was bringt geringe Testabdeckung?
-
-note: 
-- T: Fehler werden übersehen
-    
-- D: Warum Testen, das funktioniert
-- D: Macht der Tests wirklich etwas?
-- D: Code untestbar geschrieben
-- D: Wer muss Tests schreiben? -> Tests sucken
-- T: Externes Team ist schlecht
-    externe Teams sind billiger
-    Personalaufwand
-    Testteam nervt -> Entwickler haben weniger Spaß
-- T: Geringe Testabdeckung ist schlechter als gar keine Tests
-    geben das gefühl man hätte etwas getestet, dass ist aber nicht wirklich so
-    viele Tests bleiben unentdeckt

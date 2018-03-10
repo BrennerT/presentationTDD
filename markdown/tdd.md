@@ -41,6 +41,32 @@ Vorteile
 - Design
 - Professionalism
 
+-- 
+## Bottom-Up TDD
+
+![bottom up](../img/bottom-up-tdd.png)<!-- .element: height="350px" -->
+
+***
+[https://image.slidesharecdn.com/tddcommented-130125160145-phpapp01/95/tdd-outsidein-4-638.jpg?cb=1383700832](https://image.slidesharecdn.com/tddcommented-130125160145-phpapp01/95/tdd-outsidein-4-638.jpg?cb=1383700832)<!-- .element: style="font-size: 20px" -->
+
+note:
+- Beginn bei Datenmodelierungsebene
+- Keine Mocks benötigt
+
+
+--
+
+## Outside-In TDD
+
+![top down](../img/outside-in-tdd.jpg)<!-- .element: height="350px" -->
+
+***
+[https://image.slidesharecdn.com/tddcommented-130125160145-phpapp01/95/tdd-outsidein-6-638.jpg?cb=1383700832](https://image.slidesharecdn.com/tddcommented-130125160145-phpapp01/95/tdd-outsidein-6-638.jpg?cb=1383700832)<!-- .element: style="font-size: 20px" -->
+
+note: 
+- Entwicklung von Nutzungsebene ab
+- Mocks werden sehr oft benötigt
+
 --
 
 ## Greybox 
@@ -322,37 +348,6 @@ Vorteile
         return result
     }
 ```
-
----
-
-# Ansätze
---
-
-## Bottom-Up TDD
-
-![bottom up](../img/bottom-up-tdd.png)<!-- .element: height="350px" -->
-
-***
-[https://image.slidesharecdn.com/tddcommented-130125160145-phpapp01/95/tdd-outsidein-4-638.jpg?cb=1383700832](https://image.slidesharecdn.com/tddcommented-130125160145-phpapp01/95/tdd-outsidein-4-638.jpg?cb=1383700832)<!-- .element: style="font-size: 20px" -->
-
-note:
-- Beginn bei Datenmodelierungsebene
-- Keine Mocks benötigt
-
-
---
-
-## Outside-In TDD
-
-![top down](../img/outside-in-tdd.jpg)<!-- .element: height="350px" -->
-
-***
-[https://image.slidesharecdn.com/tddcommented-130125160145-phpapp01/95/tdd-outsidein-6-638.jpg?cb=1383700832](https://image.slidesharecdn.com/tddcommented-130125160145-phpapp01/95/tdd-outsidein-6-638.jpg?cb=1383700832)<!-- .element: style="font-size: 20px" -->
-
-note: 
-- Entwicklung von Nutzungsebene ab
-- Mocks werden sehr oft benötigt
-
 ---
 
 # Praktische Erfahrungen
@@ -403,11 +398,26 @@ note:
 
 ---
 
-# Ergebnisse und Probleme
+# Ergebnisse und Probleme  
+
+-- 
+
+# Nachteile
+
+- Dauert länger?
+- Schwerer Einstieg
+
+note: 
+- dauert länger wird häufig behauptet
+
+-- 
+
+# Vorteile
 
 - Anforderungen werden verstanden<!-- .element: class="fragment" -->
 - Keine unnötigen Funktionen werden implementiert <!-- .element: class="fragment" -->
 - Jede Zeile Code ist getestet <!-- .element: class="fragment" -->
+- Fügt sich gut in agile Methoden ein <!-- .element: class="fragment" -->
 
 note: 
 - Anforderungen werden verstanden
