@@ -257,6 +257,22 @@ note:
 
 --
 
+## Was kann man testen?
+
+Einfach zu testen:
+- Funktionaler Code
+- Interfaces
+
+Schwierig zu testen:
+- (globaler) State
+- Seiteneffekte
+
+
+***
+[Which GOF design patterns work well with TDD, and which do not?](https://softwareengineering.stackexchange.com/questions/115020/which-gof-design-patterns-work-well-with-tdd-and-which-do-not) <!-- .element: style="font-size: 20px" -->
+
+--
+
 ## Ausgangssituation
 
 - Objekt liefert nicht-deterministische Ergebnisse <!-- .element: class="fragment"-->
@@ -290,12 +306,6 @@ Beispiel:
 - a fake cook - a someone pretending to be a cook by using frozen dinners and a microwave,
 - a stub cook - a hot dog vendor that always gives you hot dogs no matter what you order, or
 - a mock cook - an undercover cop following a script pretending to be a cook in a sting operation.
-
---
-
-## Pattern im Code
-
-*Beispiele**
 
 ---
 
