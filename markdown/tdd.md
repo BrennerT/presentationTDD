@@ -368,6 +368,27 @@ note:
     - Dauert ~10% länger
     - Aber 50% weniger Defects
 
+--
+
+## Tests in der Praxis
+
+``` kotlin
+    "1 has no prime factors" {
+        primeFactors(1) shouldEqual emptyList()
+    }
+    
+    "primes only have themself as prime factors" {
+        val prime = randomPrime()
+        primeFactors(prime) shouldEqual listOf(prime)
+    }
+    
+    "other numbers have prime factors" {
+       val primes = randomListOf(::randomPrime).sort()
+       val n = primes.reduce(Int::times)
+       primeFactors(n) shouldEqual primes
+    }
+```
+
 ---
 
 # Ergebnisse und Probleme
