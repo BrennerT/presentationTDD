@@ -123,7 +123,10 @@ note:
 
 ![black box](../img/blackbox.PNG)
 
-*Beispiel mit Code*
+- Grenzwertanalyse  <!-- .element: class="fragment" -->
+- Equivalenzklassen <!-- .element: class="fragment" -->
+- Fehler raten <!-- .element: class="fragment" -->
+
 
 ***
 [White Box Testing and Black Box Testing in Software Testing](https://www.testing-whiz.com/blog/understanding-white-box-testing-and)<!-- .element: style="font-size: 20px" -->
@@ -149,7 +152,8 @@ note:
 
 ![white box](../img/whitebox.PNG)
 
-*Beispiel mit Code*
+- Kontrollfluss  <!-- .element: class="fragment" -->
+- Datenfluss <!-- .element: class="fragment" -->
 
 ***
 [White Box Testing and Black Box Testing in Software Testing](https://www.testing-whiz.com/blog/understanding-white-box-testing-and)<!-- .element: style="font-size: 20px" -->
