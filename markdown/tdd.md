@@ -45,6 +45,11 @@ Vorteile
 
 ## Greybox 
 
+![Greybox](../img/greybox.jpeg)
+
+***
+[Grey-Box-Testing: entwicklungsnah testen](https://jaxenter.de/grey-box-testing-entwicklungsnah-testen-28915)<!-- .element: style="font-size:20px" -->
+
 ---
 
 # Beispiel
@@ -352,10 +357,6 @@ note:
 
 # Praktische Erfahrungen
 
-- Wie strikt wird TDD eingehalten?<!-- .element: class="fragment" -->
-- Aller Anfang ist schwer<!-- .element: class="fragment" -->
-- Erfahrungen IBM <!-- .element: class="fragment" -->
-
 note: 
 - TDD gegen nicht testen 
     - HTML Clients im Arsch
@@ -388,6 +389,17 @@ note:
        primeFactors(n) shouldEqual primes
     }
 ```
+
+--
+
+## Geringere Defect Rate
+
+![Klassisch](../img/ibm-adhoc.png)<!-- .element: style="height: 180px" -->
+![TDD](../img/ibm-tdd.png)<!-- .element: style="height: 220px" -->
+
+***
+
+[Assessing Test-Driven Development at IBM](https://pdfs.semanticscholar.org/a3d3/51a7dfd1c4b03ba0611e467054644c4c8450.pdf) <!-- .element: style="font-size: 20p20px" -->
 
 ---
 
