@@ -207,6 +207,9 @@ note:
 - Funktionaler Code
 - Interfaces
 
+***
+[Which GOF design patterns work well with TDD, and which do not?](https://softwareengineering.stackexchange.com/questions/115020/which-gof-design-patterns-work-well-with-tdd-and-which-do-not) <!-- .element: style="font-size: 20px" -->
+
 --
 
 ## Schwer zu testen
