@@ -123,8 +123,8 @@ note:
 
 ![black box](img/blackbox.PNG)
 
-- Grenzwertanalyse  <!-- .element: class="fragment" -->
 - Equivalenzklassen <!-- .element: class="fragment" -->
+- Grenzwertanalyse  <!-- .element: class="fragment" -->
 - Fehler raten <!-- .element: class="fragment" -->
 
 
