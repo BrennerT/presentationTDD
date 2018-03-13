@@ -138,7 +138,7 @@ note:
 
 ``` kotlin
     "3 has prime factors [3]" {
-        primeFactors(2) shouldEqual listOf(2)
+        primeFactors(3) shouldEqual listOf(3)
     }
 ```
 
